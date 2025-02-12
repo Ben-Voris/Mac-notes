@@ -73,7 +73,7 @@ Much of this is from
 - `delete`: Deletes the character to the left, i.e., Linux backspace.
 - `Fn` + `delete`: Delete the character to the right, i.e., Linux delete.
 
-### Moving on the line
+### Moving on the line and up an down lines
 
 These key chords behave different in different apps.
 
@@ -93,9 +93,9 @@ inserted.
 - `Fn` + `down-arrow`: Moves to the bottom of the window or document.
 - `Fn` + `up-arrow`: Moves to the top of the window or document.
 
-## Enter line break in apps where `return` means Send
+## Enter line break in apps where `Return` means Send
 
-- `Shift` + `return` Used in Signal and Messages
+- `Shift` + `Return` Used in Signal and Messages
 
 ## Mouse command when editing text
 
@@ -107,6 +107,8 @@ inserted.
 - `option` + `delete` Deletes highlighted message without advancing to the next
   message.
 - `Command` + `Shift` + `N`: Refresh mailbox.
+- Two-finger left or right swipe on a message header exposes actions, like
+  delete, mark as unread, etc.
 
 ## Messages app
 
@@ -117,7 +119,90 @@ inserted.
 ## Safari
 
 - `Control` + Click on a Link: Opens in a new tab
+- Two finger right swipe in tab: Closes tab
+- `Command` + `Z`: Undo close tab
 
 ## VS Code
 
 [Keyboard shortcuts for macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
+- `Option` + `Command` + `F`: Find and replace.
+- `Shift` + `Command` + `\`: Jump to matching bracket
+- `Control` + `G`: Jump to line number
+- `Command` + `K` + `S`: Open Keyboard Shortcuts
+- `Fn` + `F1` or `Command` + `Shift` + `P`: Open Command
+
+VS Code steals the default minimize `Command` + `M`. I found no shortcut that
+uses only this, but some use it in conjunction with other keys, like `Command` +
+`K` + `M` for "Change Language Mode" and `Shift` + `Command` + `M` for "Toggle
+Problems".
+
+## OCR
+
+This depends upon displaying the photo in the `Preview` app and so do not work
+for a photo in a shared album.
+
+[Interact with text in a photo using Live Text in Preview on Mac](https://support.apple.com/guide/preview/interact-with-text-in-a-photo-prvw625a5b2c/mac)
+
+### From email
+
+Double click on the picture to open the Preview app.
+
+### From Photos
+
+- `Control` + Click on the photo
+- Click on `Edit With`
+- Click on `Preview` (NB: you'll see a shortcut `Command` + `Return`. It doesn't
+  work.)
+
+### Once in Previews
+
+- `Tools` > `Text Selection`
+- Use "drag" to select the desired text
+- Copy, e.g., with `Command` + `C`
+
+## Photo App
+
+This only works for a local photo and does not work for a photo in a shared
+album.
+
+- To add a title or subject, click on the `i` in the tool bar. A window will
+  open. Click inside `Title` or `Caption` or `Keywords`, and type. Close the
+  window.
+
+[Keyboard shortcuts and gestures in Photos on Mac](https://support.apple.com/guide/photos/keyboard-shortcuts-and-gestures-pht9b4411b24/mac)
+
+## Installed
+
+### Install VS Code
+
+### `exiftool`
+
+[`exiftool`](https://exiftool.org)
+
+- macOS will display "Apple could not verify .... is free of malware ..." and
+  will offer to "Move to Trash". Click `Done`.
+- Open `System Settins` > `Privacy & Security`
+- At the bottom, under `Security`, you should see the package you tried to
+  install. Click on `Open Anyway` and the click on it again. Then enter your
+  local password (not for the Apple account).
+- A window should open that lets you install the app, including changing the
+  directory.
+
+## Terminal app
+
+Apple wants me to use zsh because it hooks into Apple thingies.
+
+To use bash and not get the annoying warning about zsh, put this into
+`~/.zshenv`:
+
+```shell
+# See https://support.apple.com/en-us/102360
+export BASH_SILENCE_DEPRECATION_WARNING=1
+```
+
+Sometimes `Control` + `C` stops working and you'll hear a beep. When this
+happens, try `Command` + `.`
+
+The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/originals"`
+The double quotes are necessary (that, or escape the space).
