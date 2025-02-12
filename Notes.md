@@ -193,7 +193,7 @@ album.
 
 Apple wants me to use zsh because it hooks into Apple thingies.
 
-To use bash and not get the annoying warning about zsh, put this into
+To avoid the annoying warning about zsh when starting bash, put this into
 `~/.zshenv`:
 
 ```shell
@@ -206,3 +206,7 @@ happens, try `Command` + `.`
 
 The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/originals"`
 The double quotes are necessary (that, or escape the space).
+
+When you exit the shell, `Terminal` will stay running. To prevent this, in the
+`Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
+exited cleanly".
