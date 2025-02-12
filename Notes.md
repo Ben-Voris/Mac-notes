@@ -204,9 +204,48 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 Sometimes `Control` + `C` stops working and you'll hear a beep. When this
 happens, try `Command` + `.`
 
-The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/originals"`
-The double quotes are necessary (that, or escape the space).
-
 When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
+
+## Photos in Photos app
+
+The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/"`
+The double quotes are necessary (that, or escape the space).
+
+For one picture, there are at least six files:
+
+1. ./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_201_a.jpeg
+2. ./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118.plist
+3. ./resources/derivatives/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_105_c.jpeg
+4. ./resources/derivatives/masters/0/0FB91698-EF23-48BF-96A9-F7902A77E118_4_5005_c.jpeg
+5. ./resources/caches/compute/0/0FB91698-EF23-48BF-96A9-F7902A77E118_5_5_c_14.dat
+6. ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
+
+-----
+
+1. A version of \#6 but cropped as the Photo app displays it
+2. "renders" plist is a XML document. It contains a date and an encoded data
+   block. Don't know what it is, but it's still gibberish when decoded with
+   base64.
+3. A smaller version of \#1
+4. A smaller version of \#3
+5. The `.dat` file has the title embedded in it.
+6. The original picture without edits. If the picture has GPS data, at least for
+   `.jpeg` files, it is here.
+
+./scopes/cloudsharing/data contains some (all?) of the photos in shared albums.
+
+Launching the Preview app from the zsh command line (not bash):
+
+```shell
+open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
+```
+
+### Things to check out
+
+[iCloud Photo downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
+
+To copy from iPhone to Mac or NAS
+[PhotoSync – transfer photos on App store](https://apps.apple.com/us/app/photosync-transfer-photos/id415850124)
+[Visit photosync-app.com for a complete feature list.](https://photosync-app.com)
