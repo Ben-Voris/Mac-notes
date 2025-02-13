@@ -5,9 +5,8 @@
 [How to use the function keys on your Mac](https://support.apple.com/en-us/102439)
 either:
 
-- Press and hold the Function (Fn)/Globe keyNo alt supplied for Image while
-  pressing a function key.
-- Change the default behavior of the keys
+- Press and hold the Function (Fn)/Globe while pressing a function key.
+- To change the default behavior of the keys
     1. Choose Apple menu  > System Settings.
     2. Click Keyboard in the sidebar.
     3. Click the Keyboard Shortcuts button on the right.
@@ -26,9 +25,9 @@ Much of this is from
   in the Finder.
 - `Command` + `V`: Paste the contents of the Clipboard into the current document or
   app. This also works for files in the Finder.
-- `Command` + `Z`: Undo the previous command. You can then press Shift-`Command` + Z to
-  Redo, reversing the undo command. In some apps, you can undo and redo multiple
-  commands.
+- `Command` + `Z`: Undo the previous command. You can then press `Shift`
+   \+ `Command` + `Z` to Redo, reversing the undo command. In some apps, you
+   can undo and redo multiple commands.
 - `Command` + `A`: Select All items.
 - `Command` + `F`: Find items in a document or open a Find window.
 - `Command` + `G`: Find Again: Find the next occurrence of the item previously found.
@@ -70,8 +69,8 @@ Much of this is from
 
 ### More text editing keys
 
-- `delete`: Deletes the character to the left, i.e., Linux backspace.
-- `Fn` + `delete`: Delete the character to the right, i.e., Linux delete.
+- `Delete`: Deletes the character to the left, i.e., Linux backspace.
+- `Fn` + `Delete`: Delete the character to the right, i.e., Linux delete.
 
 ### Moving on the line and up an down lines
 
@@ -93,7 +92,7 @@ inserted.
 - `Fn` + `down-arrow`: Moves to the bottom of the window or document.
 - `Fn` + `up-arrow`: Moves to the top of the window or document.
 
-## Enter line break in apps where `Return` means Send
+## Create a line break in apps where `Return` means Send
 
 - `Shift` + `Return` Used in Signal and Messages
 
@@ -104,11 +103,14 @@ inserted.
 
 ## Apple Mail app
 
-- `option` + `delete` Deletes highlighted message without advancing to the next
+- `Option` + `Delete` Deletes highlighted message without advancing to the next
   message.
 - `Command` + `Shift` + `N`: Refresh mailbox.
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
+
+NB: Something is leaving deleted messages in the inbox. They are marked as read.
+Wtf?
 
 ## Messages app
 
@@ -121,6 +123,8 @@ inserted.
 - `Control` + Click on a Link: Opens in a new tab
 - Two finger right swipe in tab: Closes tab
 - `Command` + `Z`: Undo close tab
+- Long press on `+` (new tab) shows recently closed tabs. Clicking on one
+  reopens it.
 
 ## VS Code
 
@@ -163,6 +167,8 @@ Double click on the picture to open the Preview app.
 
 ## Photo App
 
+[Keyboard shortcuts and gestures in Photos on Mac](https://support.apple.com/guide/photos/keyboard-shortcuts-and-gestures-pht9b4411b24/mac)
+
 This only works for a local photo and does not work for a photo in a shared
 album.
 
@@ -170,13 +176,32 @@ album.
   open. Click inside `Title` or `Caption` or `Keywords`, and type. Close the
   window.
 
-[Keyboard shortcuts and gestures in Photos on Mac](https://support.apple.com/guide/photos/keyboard-shortcuts-and-gestures-pht9b4411b24/mac)
+## What to install
 
-## Installed
+Some iOS apps are web pages on macOS. E.g., Pandora, Netflix, etc. Visit the
+page, click on the `Share` (up arrow) and click on `Add to Dock`. These pages
+also appear in the Apps folder.
 
-### Install VS Code
+### To install VS Code
 
-### `exiftool`
+<https://code.visualstudio.com/download>
+
+Extensions
+
+- Bash IDE
+- Bookmarks
+- C/C++
+- C/C++ Themes
+- markdownlint
+- Rewrap Revivied
+- Sort JSON objects
+- Sort lines
+- Spell Right
+- vscode-pdf
+
+Sign into GitHub.
+
+### To install exiftool
 
 [`exiftool`](https://exiftool.org)
 
@@ -188,6 +213,46 @@ album.
   local password (not for the Apple account).
 - A window should open that lets you install the app, including changing the
   directory.
+
+### To install SQLLite browser
+
+Download at <https://download.sqlitebrowser.org>
+
+See <https://github.com/sqlitebrowser/sqlitebrowser/>.
+
+### To install Tor Browser
+
+<https://www.torproject.org/download/>
+
+### To install Signal
+
+<https://signal.org/download/macos/>
+
+Existing chats from other devices are not synchronized.
+
+### To install Firefox
+
+<https://www.mozilla.org/en-US/firefox/mac/>
+
+- Add `Privacy Badger`
+
+### From Mac App store
+
+- Amazon Prime Video
+- Orbit
+- Plain Paste
+- Speedtest
+- Strongbox
+  - After installing it and Firefox, install the Firefox extension
+    <https://addons.mozilla.org/en-GB/firefox/addon/strongbox-autofill/>
+  - Settings > "Touch ID & Password" set "Use Touch ID" for autofilling
+    passwords on.
+  - Settings > “Autofill from” > "AutoFill & Password", turn `Passwords` off,
+    `Strongbox` on, and list `Strongbox` in "Setup Code In"
+  - Make sure that Strongbox is listed under "Login Items & Extensions" >
+    "Open at Login"
+- Swift Playground
+- Xcode
 
 ## Terminal app
 
@@ -210,11 +275,8 @@ exited cleanly".
 
 ## Photos in Photos app
 
-Check out `database/Photos.sqlite`.
-
-<https://github.com/sqlitebrowser/sqlitebrowser/> might be useful.
-
-Download at <https://download.sqlitebrowser.org>
+Try pointing [SQL Lite browser](#to-install-sqllite-browser) at
+`database/Photos.sqlite`.
 
 The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/"`
 The double quotes are necessary (that, or escape the space).
