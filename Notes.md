@@ -225,16 +225,20 @@ For one picture, there are at least six files:
 -----
 
 1. A version of \#6 but cropped as the Photo app displays it
-2. "renders" plist is a XML document. It contains a date and an encoded data
-   block. Don't know what it is, but it's still gibberish when decoded with
-   base64.
+2. plist is a XML document. It contains an encoded data block. Don't know what
+   it is, but it's still gibberish when decoded with base64. `exiftool` can
+   decode at least part of it.
 3. A smaller version of \#1
 4. A smaller version of \#3
-5. The `.dat` file has the title embedded in it.
+5. The `.dat` file has the title embedded in it. `exiftool` does not understand
+   it.
 6. The original picture without edits. If the picture has GPS data, at least for
    `.jpeg` files, it is here.
 
-./scopes/cloudsharing/data contains some (all?) of the photos in shared albums.
+[`exiftool` output for an example file](exiftool-example-output.md)
+
+`scopes/cloudsharing/data` contains at least some (all?) of the photos from
+shared albums.
 
 Launching the Preview app from the zsh command line (not bash):
 
