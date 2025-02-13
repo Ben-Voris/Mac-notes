@@ -1,12 +1,31 @@
 # Example output for a JPEG
 
-The command:
+I found the hex string file name by poking around and generated the following
+output with the shell command:
 
 ```shell
 find ~/Pictures -name '0FB91698-EF23-48BF-96A9-F7902A77E118*' -exec exiftool "{}" \;
 ```
 
-## resources/renders
+1. [./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_201_a.jpeg](#1-resourcesrenders)
+    - A version of \#6 but cropped as the Photo app displays it.This file
+      contains GPS data.
+2. [./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118.plist](#2-plist)
+    - A plist is a XML document. This one contains an encoded data block that I
+      cannot interpret. Whatever it is, it is still gibberish when decoded with
+      base64. `exiftool` can decode at least part of this file.
+3. [./resources/derivatives/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_105_c.jpeg](#3-resourcesderivatives)
+    - A smaller version of \#1
+4. [./resources/derivatives/masters/0/0FB91698-EF23-48BF-96A9-F7902A77E118_4_5005_c.jpeg](#4-resourcesderivativesmasters)
+   - A smaller version of \#3
+5. [./resources/caches/compute/0/0FB91698-EF23-48BF-96A9-F7902A77E118_5_5_c_14.dat](#5-dat-file)
+    - `strings(1)` shows that this file file has the title embedded in it.
+      `exiftool` does not decode it.
+6. [./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg](#6-originals)
+    - The appears to be the original picture, without any edits. This file
+      contains GPS data.
+
+## 1 resources/renders
 
 ```text
 ExifTool Version Number         : 13.19
@@ -120,7 +139,7 @@ Light Value                     : 4.9
 Lens ID                         : iPhone 6s Plus back camera 4.15mm f/2.2
 ```
 
-## plist
+## 2 plist
 
 ```text
 ExifTool Version Number         : 13.19
@@ -140,6 +159,11 @@ Adjustment Format Identifier    : com.apple.photo
 Adjustment Format Version       : 1.4
 Adjustment Render Types         : 18944
 Adjustment Timestamp            : 2018:11:18 04:02:26Z
+```
+
+## 3 resources/derivatives
+
+```text
 ExifTool Version Number         : 13.19
 File Name                       : 0FB91698-EF23-48BF-96A9-F7902A77E118_1_105_c.jpeg
 Directory                       : /Users/bvoris/Pictures/Photos Library.photoslibrary/resources/derivatives/0
@@ -239,7 +263,7 @@ Light Value                     : 4.9
 Lens ID                         : iPhone 6s Plus back camera 4.15mm f/2.2
 ```
 
-## resources/derivatives/masters
+## 4 resources/derivatives/masters
 
 ```text
 ExifTool Version Number         : 13.19
@@ -271,7 +295,7 @@ Image Size                      : 360x506
 Megapixels                      : 0.182
 ```
 
-## dat file
+## 5 dat file
 
 ```text
 ExifTool Version Number         : 13.19
@@ -285,7 +309,7 @@ File Permissions                : -rw-r--r--
 Error                           : Unknown file type
 ```
 
-## originals
+## 6 originals
 
 ```text
 ExifTool Version Number         : 13.19

@@ -101,6 +101,15 @@ inserted.
 - In most apps (not VS Code), click on the word then `Control` + click to get
   suggestions.
 
+## Mouse command when reading text
+
+- Dictionary lookup can be enabled by turning `System Settings` > `Trackpad` >
+    `Force Click and haptic feedback` on. To use this:
+  - Three finger, long, hard press on a selected word.
+  - NB: the three finger press must last long enough to cause the slightly
+    delayed, "bump" feedback.
+  - This works in VS Code, Safari, and Mail.
+
 ## Apple Mail app
 
 - `Option` + `Delete` Deletes highlighted message without advancing to the next
@@ -116,7 +125,7 @@ Wtf?
 
 - `Control` + Click on a message: Displays options for tapback, edit message,
   delete, reply
-- [Line break](#enter-line-break-in-apps-where-return-means-send).
+- [Enter a line break](#create-a-line-break-in-apps-where-return-means-send).
 
 ## Safari
 
@@ -179,25 +188,26 @@ album.
 ## What to install
 
 Some iOS apps are web pages on macOS. E.g., Pandora, Netflix, etc. Visit the
-page, click on the `Share` (up arrow) and click on `Add to Dock`. These pages
-also appear in the Apps folder.
+page, click on the `Share` (up arrow) and click on `Add to Dock`. Pages added
+to the dock also appear in the Apps folder.
 
 ### To install VS Code
 
 <https://code.visualstudio.com/download>
 
-Extensions
+Add these extensions
 
-- Bash IDE
-- Bookmarks
-- C/C++
-- C/C++ Themes
-- markdownlint
-- Rewrap Revivied
-- Sort JSON objects
-- Sort lines
-- Spell Right
-- vscode-pdf
+|                                                                                                      |                                  |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------- |
+| [Bash IDE](mads-hartmann.bash-ide-vscode)                                                            | `mads-hartmann.bash-ide-vscode`  |
+| [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)               | `alefragnani.Bookmarks`          |
+| [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)                      | `ms-vscode.cpptools`             |
+| [C/C++ Themes](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-themes)        | `ms-vscode.cpptools-themes`      |
+| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)   | `DavidAnson.vscode-markdownlint` |
+| [Rewrap Revived](https://marketplace.visualstudio.com/items?itemName=dnut.rewrap-revived)            | `dnut.rewrap-revived`            |
+| [Sort JSON objects](https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json) | `richie5um2.vscode-sort-json`    |
+| [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)                  | `Tyriar.sort-lines`              |
+| [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright)                    | `ban.spellright`                 |
 
 Sign into GitHub.
 
@@ -234,7 +244,7 @@ Existing chats from other devices are not synchronized.
 
 <https://www.mozilla.org/en-US/firefox/mac/>
 
-- Add `Privacy Badger`
+- Add [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
 
 ### From Mac App store
 
@@ -243,14 +253,15 @@ Existing chats from other devices are not synchronized.
 - Plain Paste
 - Speedtest
 - Strongbox
-  - After installing it and Firefox, install the Firefox extension
-    <https://addons.mozilla.org/en-GB/firefox/addon/strongbox-autofill/>
-  - Settings > "Touch ID & Password" set "Use Touch ID" for autofilling
-    passwords on.
-  - Settings > “Autofill from” > "AutoFill & Password", turn `Passwords` off,
-    `Strongbox` on, and list `Strongbox` in "Setup Code In"
-  - Make sure that Strongbox is listed under "Login Items & Extensions" >
-    "Open at Login"
+  - After installing it and Firefox, install its Firefox extension by opening
+    <https://addons.mozilla.org/en-GB/firefox/addon/strongbox-autofill/> in
+    Firefox.
+  - `System Settings` > `Touch ID & Password` set
+    `Use Touch ID for autofilling passwords` on.
+  - `System Settings` > `Autofill from` > `AutoFill & Password`, turn `Passwords` off
+    and `Strongbox` on, and list `Strongbox` in `Setup Code In`
+  - Verify that Strongbox is listed under `Login Items & Extensions` >
+    `Open at Login`
 - Swift Playground
 - Xcode
 
@@ -281,34 +292,13 @@ Try pointing [SQL Lite browser](#to-install-sqllite-browser) at
 The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/"`
 The double quotes are necessary (that, or escape the space).
 
-For one picture, there are at least six files:
-
-1. ./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_201_a.jpeg
-2. ./resources/renders/0/0FB91698-EF23-48BF-96A9-F7902A77E118.plist
-3. ./resources/derivatives/0/0FB91698-EF23-48BF-96A9-F7902A77E118_1_105_c.jpeg
-4. ./resources/derivatives/masters/0/0FB91698-EF23-48BF-96A9-F7902A77E118_4_5005_c.jpeg
-5. ./resources/caches/compute/0/0FB91698-EF23-48BF-96A9-F7902A77E118_5_5_c_14.dat
-6. ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
-
------
-
-1. A version of \#6 but cropped as the Photo app displays it
-2. plist is a XML document. It contains an encoded data block. Don't know what
-   it is, but it's still gibberish when decoded with base64. `exiftool` can
-   decode at least part of it.
-3. A smaller version of \#1
-4. A smaller version of \#3
-5. The `.dat` file has the title embedded in it. `exiftool` does not understand
-   it.
-6. The original picture without edits. If the picture has GPS data, at least for
-   `.jpeg` files, it is here.
-
-[`exiftool` output for an example file](exiftool-example-output.md)
+For one picture, with some edits, there are six files.
+See [`exiftool` output for an example jpeg](exiftool-example-output.md).
 
 `scopes/cloudsharing/data` contains at least some (all?) of the photos from
 shared albums.
 
-Launching the Preview app from the zsh command line (not bash):
+This command launches the Preview app from the zsh (not bash) command line:
 
 ```shell
 open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
