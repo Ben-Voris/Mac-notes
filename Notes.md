@@ -210,6 +210,12 @@ exited cleanly".
 
 ## Photos in Photos app
 
+Check out `database/Photos.sqlite`.
+
+<https://github.com/sqlitebrowser/sqlitebrowser/> might be useful.
+
+Download at <https://download.sqlitebrowser.org>
+
 The picture files are in `"${HOME}/Pictures/Photos Library.photoslibrary/"`
 The double quotes are necessary (that, or escape the space).
 
@@ -252,4 +258,4 @@ open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 
 To copy from iPhone to Mac or NAS
 [PhotoSync – transfer photos on App store](https://apps.apple.com/us/app/photosync-transfer-photos/id415850124)
-[Visit photosync-app.com for a complete feature list.](https://photosync-app.com)
+[Visit `photosync-app.com` for a complete feature list.](https://photosync-app.com)
