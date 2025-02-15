@@ -284,7 +284,7 @@ When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
 
-## Photos in Photos app
+## Accessing photos in Photos app
 
 Try pointing [SQL Lite browser](#to-install-sqllite-browser) at
 `database/Photos.sqlite`.
@@ -304,7 +304,7 @@ This command launches the Preview app from the zsh (not bash) command line:
 open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 ```
 
-### Things to check out
+### Things to check out for Photos
 
 [iCloud Photo downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
 
@@ -312,13 +312,23 @@ To copy from iPhone to Mac or NAS
 [PhotoSync – transfer photos on App store](https://apps.apple.com/us/app/photosync-transfer-photos/id415850124)
 [Visit `photosync-app.com` for a complete feature list.](https://photosync-app.com)
 
+[Photo Exifer](https://www.fireebok.com/photo-exif-for-ios.html) claims to
+import XMP data to the Photos app. See
+[How to import XMP sidecars to Photos on Mac?](https://www.fireebok.com/resource/how-to-import-xmp-sidecars-to-photos-on-mac.html)
+
+> Photo Exifer is compatible with extensible metadata files, supporting XMP
+> files from Apple Photos and JSON files from Google Photos. It allows you to
+> read photo metadata from XMP and JSON files and write it back to the
+> corresponding photos
+
 ## Controlling the dock
 
 These use `defaults(1)` to "access the Mac OS X user defaults system".
 
 ### Prevent rearranging the dock
 
-When using the trackpad, I found it too easy to accidentally rearrange the dock.
+When using the trackpad, and the default configuration, I find it too easy to
+accidentally rearrange the dock. Here's a `zsh` command to prevent that.
 
 ```shell
 defaults write com.apple.Dock contents-immutable -bool true; killall Dock
@@ -330,11 +340,44 @@ defaults write com.apple.Dock contents-immutable -bool true; killall Dock
 defaults write com.apple.Dock contents-immutable -bool false; killall Dock
 ```
 
-This can also be used to control position `com.apple.Dock position-immutable` and size
+`defaults` can also be used to control whether one can change the docks's
+position `com.apple.Dock position-immutable` and size
 `com.apple.Dock size-immutable`.
 
-### Example reading the value
+### Example of using `defaults` to read a value
 
 ```shell
 defaults read com.apple.Dock contents-immutable
 ```
+
+## Homebrew vs. MacPorts
+
+Homebrew and MacPorts are ways of getting open source tools running on a Mac.
+Both are actively maintained.
+
+Here are [Apple's ports](https://github.com/orgs/apple-oss-distributions/)
+
+I installed MacPorts and their
+[`mpstats`](https://ports.macports.org/port/mpstats/) tool.
+
+[Thoughts on macOS Package Managers](https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/)
+is in favor of MacPorts because it is more consistent with Linux and issues with
+how the project is run. Notes that Homebrew is sometimes updated more quickly.
+This is old but more recent pages link to it.
+
+Responses to this
+[Reddit](https://www.reddit.com/r/MacOS/comments/17e85da/homebrew_vs_macports/)
+lean towards Homebrew because it carries over better between releases, though
+that can sometimes cause more problems than it fixes. Notes that it refuses to
+share `/usr/local`.
+
+### MacPorts
+
+- [MacPorts install](https://www.macports.org/install.php)
+- [Guide to MacPorts](https://guide.macports.org)
+- [MacPorts GitHub](https://github.com/macports).
+
+### Homebrew
+
+The [Homebrew GitHub](https://github.com/Homebrew) and the
+[Homebrew Guide](https://brew.sh).
