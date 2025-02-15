@@ -311,3 +311,30 @@ open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 To copy from iPhone to Mac or NAS
 [PhotoSync – transfer photos on App store](https://apps.apple.com/us/app/photosync-transfer-photos/id415850124)
 [Visit `photosync-app.com` for a complete feature list.](https://photosync-app.com)
+
+## Controlling the dock
+
+These use `defaults(1)` to "access the Mac OS X user defaults system".
+
+### Prevent rearranging the dock
+
+When using the trackpad, I found it too easy to accidentally rearrange the dock.
+
+```shell
+defaults write com.apple.Dock contents-immutable -bool true; killall Dock
+```
+
+### Allow rearranging the dock
+
+```shell
+defaults write com.apple.Dock contents-immutable -bool false; killall Dock
+```
+
+This can also be used to control position `com.apple.Dock position-immutable` and size
+`com.apple.Dock size-immutable`.
+
+### Example reading the value
+
+```shell
+defaults read com.apple.Dock contents-immutable
+```
