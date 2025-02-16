@@ -89,8 +89,10 @@ inserted.
   insertion point.
 - `Fn` + `left-arrow`: Depends on the app, Moves the cursor to the beginning of the
   line.
-- `Fn` + `down-arrow`: Moves to the bottom of the window or document.
-- `Fn` + `up-arrow`: Moves to the top of the window or document.
+- `Fn` + `down-arrow`: Moves to the bottom of the window or document or, in
+  VS Code and Safari, Page Down
+- `Fn` + `up-arrow`: Moves to the top of the window or document or, in VS Code
+  and Safari, Page Up.
 
 ## Create a line break in apps where `Return` means Send
 
@@ -134,26 +136,40 @@ Wtf?
 - `Command` + `Z`: Undo close tab
 - Long press on `+` (new tab) shows recently closed tabs. Clicking on one
   reopens it.
+- Two finger swipe left and right on the trackpad are equivalent to the left
+  and right arrows (`Show the previous page` and `Show the next page`).
 
 ## VS Code
 
 [Keyboard shortcuts for macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
 - `Option` + `Command` + `F`: Find and replace.
-- `Shift` + `Command` + `\`: Jump to matching bracket
+- `Shift` + `Command` + `\`: Jump to the matching bracket
 - `Control` + `G`: Jump to line number
 - `Command` + `K` + `S`: Open Keyboard Shortcuts
 - `Fn` + `F1` or `Command` + `Shift` + `P`: Open Command
+- `Control` + `P`: Previous line. Same as the up arrow key.
+- `Control` + `N`: Next line. Same as the down arrow key.
+- [Page up, page down](#moving-on-the-line-and-up-an-down-lines)
 
 VS Code steals the default minimize `Command` + `M`. I found no shortcut that
 uses only this, but some use it in conjunction with other keys, like `Command` +
 `K` + `M` for "Change Language Mode" and `Shift` + `Command` + `M` for "Toggle
 Problems".
 
+### Opening a file in VS Code from shell
+
+```shell
+open --new -a "Visual Studio Code" --args --new-window ~/.bashrc
+```
+
+It is necessary to tell `open(1)` to open a new window (`--new`) and to tell VS
+Code to create a new window `--new-window`.
+
 ## OCR
 
-This depends upon displaying the photo in the `Preview` app and so do not work
-for a photo in a shared album.
+This depends upon displaying the photo in the `Preview` app and so does not work
+for a photo that is in a shared album.
 
 [Interact with text in a photo using Live Text in Preview on Mac](https://support.apple.com/guide/preview/interact-with-text-in-a-photo-prvw625a5b2c/mac)
 
@@ -187,9 +203,9 @@ album.
 
 ## What to install
 
-Some iOS apps are web pages on macOS. E.g., Pandora, Netflix, etc. Visit the
-page, click on the `Share` (up arrow) and click on `Add to Dock`. Pages added
-to the dock also appear in the Apps folder.
+Some iOS apps, like Feedly, Netflix, Youtube, etc. are not available for Mac.
+For these, visit the page, click on the `Share` (up arrow) and click on `Add to
+Dock`. Links that are added to the dock also appear in the Apps folder.
 
 ### To install VS Code
 
@@ -301,7 +317,7 @@ shared albums.
 This command launches the Preview app from the zsh (not bash) command line:
 
 ```shell
-open -a Preview -- ./originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
+open -a Preview -- "${HOME}/Pictures/Photos Library.photoslibrary/originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 ```
 
 ### Things to check out for Photos
@@ -357,19 +373,23 @@ Both are actively maintained.
 
 Here are [Apple's ports](https://github.com/orgs/apple-oss-distributions/)
 
-I installed MacPorts and their
-[`mpstats`](https://ports.macports.org/port/mpstats/) tool.
+MacPorts and their [`mpstats`](https://ports.macports.org/port/mpstats/) tool
+installed quickly but the first real package I installed,
+[`shellcheck`](https://github.com/koalaman/shellcheck#user-content-installing),
+took tens of minutes because it pulled so many dependencies - 465 packages per
+`port echo rdepof:shellcheck` - some of which did not have prebuilt binaries.
 
 [Thoughts on macOS Package Managers](https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/)
 is in favor of MacPorts because it is more consistent with Linux and issues with
 how the project is run. Notes that Homebrew is sometimes updated more quickly.
-This is old but more recent pages link to it.
+Though this is old, more recent pages link to it.
 
 Responses to this
 [Reddit](https://www.reddit.com/r/MacOS/comments/17e85da/homebrew_vs_macports/)
-lean towards Homebrew because it carries over better between releases, though
-that can sometimes cause more problems than it fixes. Notes that it refuses to
-share `/usr/local`.
+lean towards Homebrew because it usually carries over with less between MacOS
+releases, though some note that can cause more problems than it fixes because
+Homebrew depends on the MacOS libraries. Also notes that its refusal to share
+`/usr/local` can cause problems.
 
 ### MacPorts
 
@@ -379,5 +399,43 @@ share `/usr/local`.
 
 ### Homebrew
 
-The [Homebrew GitHub](https://github.com/Homebrew) and the
-[Homebrew Guide](https://brew.sh).
+- [Homebrew GitHub](https://github.com/Homebrew)
+- [Homebrew Guide](https://brew.sh)
+
+## List USB devices
+
+```shell
+system_profiler SPUSBDataType
+```
+
+Example output with Garmin e-collar attached:
+
+```text
+USB:
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+        Vendor-Specific Device:
+
+          Product ID: 0x0003
+          Vendor ID: 0x091e  (Garmin International)
+          Version: 0.01
+          Speed: Up to 12 Mb/s
+          Location ID: 0x03100000 / 1
+          Current Available (mA): 500
+          Current Required (mA): 500
+          Extra Operating Current (mA): 0
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+```
+
+`ioreg -p IOUSB` lists information about the USB controllers but I can't get it
+to display the attached device, as shown above.
