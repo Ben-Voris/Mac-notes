@@ -439,3 +439,66 @@ USB:
 
 `ioreg -p IOUSB` lists information about the USB controllers but I can't get it
 to display the attached device, as shown above.
+
+## Recording the screen / Screen capture a problem
+
+[How to record the screen on your Mac](https://support.apple.com/en-us/102618)
+
+### Use the Screenshot app
+
+1. Open the Screenshot app by pressing these three keys together: `Shift` +
+   `Command` + `5`.
+2. You should see an onscreen toolbar with three controls for capturing a still
+   image of your screen, followed by these two controls for recording a video of
+   the screen:
+   - Record Entire Screen
+   - Record Selected Portion. You can adjust the selected portion by dragging
+     its borders with your mouse or trackpad.
+3. Before starting your recording, you can click Options in the toolbar to
+   change the recording settings:
+    - To record your voice or other audio with the screen recording, choose a
+      microphone.
+    - To show a black circle around your pointer when you click, choose Show
+      Mouse Clicks.
+    - To set a recording timer, choose the number of seconds to wait before
+      recording begins after you click Record.
+    - To change where the recording will be saved after you stop recording,
+      choose a different “Save to” location. By default, recordings are saved to
+      your desktop.
+4. To start recording, click the Record button in the Screenshot toolbar.
+5. To stop recording, click the Stop button in the menu bar, or press
+   Command-Control-Esc (Escape).
+6. When you see a thumbnail of the recording in the corner of your screen, click
+   it to edit the recording. Or wait for the recording to save to your desktop.
+
+[Learn more about using the Screenshot app](https://support.apple.com/guide/mac-help/mh26782/mac)
+
+### Use QuickTime Player
+
+1. Open QuickTime Player from your Applications folder.
+2. From the menu bar, choose File > New Screen Recording. Or press
+   Control-Command-N.
+    - If you see the onscreen controls described above, screen recording on your
+      Mac is performed by the Screenshot app. Follow the steps in the previous
+      section.
+    - If you see the Screen Recording window described below, screen recording
+      on your Mac is performed by QuickTime Player. Continue to the next step.
+3. Before starting your recording, you can click the arrow next to the Record
+   buttonNo alt supplied for Image to change the recording settings:
+    - To record your voice or other audio with the screen recording, choose a
+      microphone. To monitor that audio during recording, adjust the volume
+      slider. If you get audio feedback, lower the volume or use headphones with
+      a microphone.
+    - To show a black circle around your pointer when you click, choose Show
+      Mouse Clicks in Recording.
+4. To start recording, click the Record buttonNo alt supplied for Image and then
+   take one of these actions:
+    - Click anywhere on the screen to begin recording the entire screen.
+    - Or drag to select an area to record, then click Start Recording within
+      that area.
+5. To stop recording, click the Stop buttonNo alt supplied for Image in the menu
+   bar, or press Command-Control-Esc (Escape).
+6. After you stop recording, QuickTime Player automatically opens the recording.
+   You can now play, edit, or share the recording.
+
+[Learn more about using QuickTime Player](https://support.apple.com/guide/quicktime-player/welcome/mac)
