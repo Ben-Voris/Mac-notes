@@ -262,6 +262,20 @@ Existing chats from other devices are not synchronized.
 
 - Add [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
 
+### Garmin programs
+
+- Garmin Basecamp for Mac
+- Garmin Express - Used this to update firmware on Alpha 100 GPS.
+- inReach Sync - Updates firmware. Also, syncs contacts and messages set in
+  <https://explore.garmin.com/Messages>
+
+#### Installed but not sure if they're useful
+
+- Garmin MapInstall
+- Garmin MapManager
+- Garmin WebUpdater for Mac - This should update the e-collars but gives a
+  warning about running on a Mac.
+
 ### From Mac App store
 
 - Amazon Prime Video
@@ -300,7 +314,7 @@ When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
 
-## Accessing photos in Photos app
+## Accessing the Photo Library
 
 Try pointing [SQL Lite browser](#to-install-sqllite-browser) at
 `database/Photos.sqlite`.
