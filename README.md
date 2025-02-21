@@ -98,6 +98,55 @@ inserted.
 
 - `Shift` + `Return` Used in Signal and Messages
 
+## MacBook Trackpad setup
+
+`Settings` > `Trackpad`
+
+Remember to use both hands. For example, for me, swiping from the left is easier
+with the left hand. When selecting a large amount of text, it is possible to
+start the "click drag" with one hand and extend it with the other.
+
+### `Point & Click`
+
+- Set `Click` to `Medium` or `Firm`.
+- Enable `Force Click and haptic feedback`.
+- Set `Look up & data detectors` to `Force Click with One Finger`.
+- Set `Secondary click` (i.e., "right click") to `Click with Two Fingers`
+- Disable `Tap to click`. If this is enabled, a light tap is registered as a
+  click.
+
+Force click is a longish hard press that, if haptic feedback is enabled, gives
+a distinct "bump" as feedback.
+
+An example of a "data detector" is a dictionary lookup that can appear when a
+word is selected that is in the dictionary. Sometimes this repeatedly does not
+work, even for words in the dictionary. And then it starts working.
+
+### Scroll & Zoom
+
+Enable
+
+- `Natural scrolling` / `Contents track finger movement`
+- `Zoom in or out` / `Pinch with two fingers`
+- `Smart Zoom` / `Double tab with two fingers`
+- `Rotate` / `Rotate with two fingers`
+
+### More Gestures
+
+- Set `Swipe between pages` to `Scroll Left or Right with Two Fingers`
+- Set `Swipe between full-screen applications` to
+  `Swipe Left or Right with Three fingers`
+- Enable `Notification Center` /
+  `Swipe left from the right edge with two fingers`
+- Set `Mission Control` to `Swipe Up with Three Fingers`. This shows a set
+  of small views of the currently running applications. Clicking on one
+  brings that application to the foreground.
+- Set `App Exposé` to `Swipe Down with Three Fingers` This exposes the files
+  opened by the current foreground application. Swipe up with three fingers
+  to hide this.
+- Set `Launchpad` to `Pinch with thumb and three fingers`
+- Set `Show Desktop` to `Spread with thumb and three fingers`
+
 ## Mouse command when editing text
 
 - In most apps (not VS Code), click on the word then `Control` + click to get
@@ -261,6 +310,16 @@ Existing chats from other devices are not synchronized.
 <https://www.mozilla.org/en-US/firefox/mac/>
 
 - Add [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
+- Add [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+  - <https://github.com/gorhill/uBlock#ublock-origin>
+
+### To install DigiKam
+
+A photo cataloging tool I used on Linux
+
+<https://www.digikam.org/download/>
+
+Installing this requires the same steps as [exiftool](#to-install-exiftool).
 
 ### Garmin programs
 
