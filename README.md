@@ -119,8 +119,8 @@ Force click is a longish hard press that, if haptic feedback is enabled, gives
 a distinct "bump" as feedback.
 
 An example of a "data detector" is a dictionary lookup that can appear when a
-word is selected that is in the dictionary. Sometimes this repeatedly does not
-work, even for words in the dictionary. And then it starts working.
+word is selected that is in the dictionary. See
+[dictionary lookup](#dictionary-lookup).
 
 ### Scroll & Zoom
 
@@ -154,12 +154,23 @@ Enable
 
 ## Mouse command when reading text
 
-- Dictionary lookup can be enabled by turning `System Settings` > `Trackpad` >
-    `Force Click and haptic feedback` on. To use this:
-  - Three finger, long, hard press on a selected word.
-  - NB: the three finger press must last long enough to cause the slightly
-    delayed, "bump" feedback.
-  - This works in VS Code, Safari, and Mail.
+### Dictionary lookup
+
+Dictionary lookup can be enabled by turning `System Settings` > `Trackpad`.
+
+Sometimes this repeatedly does not work, even for words in the dictionary. And
+then it starts working. And, it's not consistent.
+
+Some apps (e.g., `Safari` and `Visual Studio`) use a three-finger press to open
+the dictionary, others (e.g., `Visual Studio` and `Preview`) use one, and others
+(e.g., `Preview`) use two followed by a two-finger scroll to `Look Up`.
+
+To use this:
+
+- Three finger, long, hard press on a selected word.
+- NB: the three finger press must last long enough to cause the slightly
+  delayed, "bump" feedback.
+- This works in VS Code, Safari, and Mail.
 
 ## Apple Mail app
 
