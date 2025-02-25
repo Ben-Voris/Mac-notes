@@ -158,19 +158,17 @@ Enable
 
 Dictionary lookup can be enabled by turning `System Settings` > `Trackpad`.
 
-Sometimes this repeatedly does not work, even for words in the dictionary. And
-then it starts working. And, it's not consistent.
+Sometimes this does not work, even for words that are in the dictionary. And
+then it starts working.
 
-Some apps (e.g., `Safari` and `Visual Studio`) use a three-finger press to open
-the dictionary, others (e.g., `Visual Studio` and `Preview`) use one, and others
-(e.g., `Preview`) use two followed by a two-finger scroll to `Look Up`.
+Unfortunately, the mouse command is not consistent. All start with clicking on
+a on a word to select it, then a "Force Click" but with a different number of
+fingers.
 
-To use this:
-
-- Three finger, long, hard press on a selected word.
-- NB: the three finger press must last long enough to cause the slightly
-  delayed, "bump" feedback.
-- This works in VS Code, Safari, and Mail.
+- `Mail`, `Safari` and `Visual Studio`  - A three-finger "Force Click"
+- `Visual Studio` and `Preview` - A one-finger "Force Click"
+- `Preview` - A two-finger "Force Click" followed by scrolling to `Look Up`
+  and then a single click
 
 ## Apple Mail app
 
@@ -586,3 +584,7 @@ to display the attached device, as shown above.
    You can now play, edit, or share the recording.
 
 [Learn more about using QuickTime Player](https://support.apple.com/guide/quicktime-player/welcome/mac)
+
+## Delete an app
+
+`Finder` > `Applications`, click on the application, then press `Command` + `Delete`.
