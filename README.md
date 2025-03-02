@@ -175,6 +175,10 @@ fingers.
 - `Option` + `Delete` Deletes highlighted message without advancing to the next
   message.
 - `Command` + `Shift` + `N`: Refresh mailbox.
+- `Command` + `Shift` + `+`: Increase displayed size of message content (zoom
+  in).
+- `Command` + `Shift` + `-`: Decrease displayed size of message content (zoom
+  out).
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
 
