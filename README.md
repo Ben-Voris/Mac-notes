@@ -592,3 +592,7 @@ to display the attached device, as shown above.
 ## Delete an app
 
 `Finder` > `Applications`, click on the application, then press `Command` + `Delete`.
+
+## External tips and tricks
+
+[macOS Tips & Tricks](https://saurabhs.org/macos-tips)
