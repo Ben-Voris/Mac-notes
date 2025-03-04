@@ -596,3 +596,26 @@ to display the attached device, as shown above.
 ## External tips and tricks
 
 [macOS Tips & Tricks](https://saurabhs.org/macos-tips)
+
+## Removing a file from quarantine
+
+If you try to open a file and get the message "Apple could not verify ... is
+free of malware" and you're sure the file is safe, you can mark it as safe.
+
+For an install programs, see the
+[instructions for installing `exiftool`](#to-install-exiftool).
+
+Otherwise:
+
+```shell
+xattr -d com.apple.quarantine <file-name>
+```
+
+Or, if using `zsh`, enter this, with a trailing space.
+
+```shell
+xattr -d com.apple.quarantine
+```
+
+Then drag the file from `Finder` into the Terminal window. THe Terminal will
+fill in the file path. Then press return.
