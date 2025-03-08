@@ -78,7 +78,7 @@ These key chords behave different in different apps.
 
 In VS Code, they move both the display and where text is inserted. In some
 documents, they seem to move based on document structure. For example, in this
-Markdown document, `Control`+ down-arrow can move to the last section and, in
+Markdown document, `Control` + `down-arrow` can move to the last section and, in
 that case, pressing these keys a second time move to the bottom of the document.
 
 In Notes, they move what text is displayed but do not move where text is
@@ -149,7 +149,7 @@ Enable
 
 ## Mouse command when editing text
 
-- In most apps (not VS Code), click on the word then `Control` + click to get
+- In most apps (not VS Code), click on the word then `Control` + Click to get
   suggestions.
 
 ## Mouse command when reading text
@@ -295,7 +295,7 @@ Sign into GitHub.
 
 - macOS will display "Apple could not verify .... is free of malware ..." and
   will offer to "Move to Trash". Click `Done`.
-- Open `System Settins` > `Privacy & Security`
+- Open `System Settings` > `Privacy & Security`
 - At the bottom, under `Security`, you should see the package you tried to
   install. Click on `Open Anyway` and the click on it again. Then enter your
   local password (not for the Apple account).
@@ -619,3 +619,32 @@ xattr -d com.apple.quarantine
 
 Then drag the file from `Finder` into the Terminal window. THe Terminal will
 fill in the file path. Then press return.
+
+If you accidentally issue `xattr -d` a second time for the same file, `xattr`
+will print a message like this:
+
+```text
+xattr: <file>: No such xattr: com.apple.quarantine
+```
+
+## Open VS Code from Finder
+
+Use `Automator` to create a `Quick Action` for Files and Folders.
+
+[Open a Folder in Vscode through Finder in MacOS](https://stackoverflow.com/questions/64040393/open-a-folder-in-vscode-through-finder-in-macos)
+
+1. Start `Automator`
+2. Click on `Quick Action`, Click on `Choose`
+3. Set `Workflow recieves current` to `Files or Folders` in `Finder`
+4. Click on `Image` and `Choose`. This opens a Finder-type window
+5. Click on `Application`
+6. Click on `Visual Studio Code`, click on `Choose` Note that `Image` is now
+   `Custom`
+7. Click on `File` > `Save` (or `Command` + `S`) and enter something like "Open
+   with Visual Studio Code".
+
+To use what you just created:
+
+1. `Control` + Click on the item
+2. Click on `Quick Actions`
+3. Click on the name you gave to the action.
