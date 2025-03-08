@@ -228,6 +228,28 @@ open --new -a "Visual Studio Code" --args --new-window ~/.bashrc
 It is necessary to tell `open(1)` to open a new window (`--new`) and to tell VS
 Code to create a new window `--new-window`.
 
+### Open a directory with VS Code from Finder
+
+Use `Automator` to create a `Quick Action` for Files and Folders.
+
+[Open a Folder in Vscode through Finder in MacOS](https://stackoverflow.com/questions/64040393/open-a-folder-in-vscode-through-finder-in-macos)
+
+1. Start `Automator`
+2. Click on `Quick Action`, Click on `Choose`
+3. Set `Workflow recieves current` to `Files or Folders` in `Finder`
+4. Click on `Image` and `Choose`. This opens a Finder-type window
+5. Click on `Application`
+6. Click on `Visual Studio Code`, click on `Choose` Note that `Image` is now
+   `Custom`
+7. Click on `File` > `Save` (or `Command` + `S`) and enter something like "Open
+   with Visual Studio Code".
+
+To use what you just created:
+
+1. `Control` + Click on the item
+2. Click on `Quick Actions`
+3. Click on the name you gave to the action.
+
 ## OCR
 
 This depends upon displaying the photo in the `Preview` app and so does not work
@@ -627,24 +649,17 @@ will print a message like this:
 xattr: <file>: No such xattr: com.apple.quarantine
 ```
 
-## Open VS Code from Finder
+## Finder
 
-Use `Automator` to create a `Quick Action` for Files and Folders.
+### Show path
 
-[Open a Folder in Vscode through Finder in MacOS](https://stackoverflow.com/questions/64040393/open-a-folder-in-vscode-through-finder-in-macos)
+To display the path as text, instead of a series of icons.
 
-1. Start `Automator`
-2. Click on `Quick Action`, Click on `Choose`
-3. Set `Workflow recieves current` to `Files or Folders` in `Finder`
-4. Click on `Image` and `Choose`. This opens a Finder-type window
-5. Click on `Application`
-6. Click on `Visual Studio Code`, click on `Choose` Note that `Image` is now
-   `Custom`
-7. Click on `File` > `Save` (or `Command` + `S`) and enter something like "Open
-   with Visual Studio Code".
+```shell
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Finder
+```
 
-To use what you just created:
+### Copy path
 
-1. `Control` + Click on the item
-2. Click on `Quick Actions`
-3. Click on the name you gave to the action.
+- `Option` + Left-click (two fingers on track pad)
+- While holding `Option`, select `Copy ... as Pathname`
