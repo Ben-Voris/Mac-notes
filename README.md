@@ -221,12 +221,28 @@ Problems".
 
 ### Opening a file in VS Code from shell
 
+At the VS Code command prompt, type `shell` and select
+`Install 'code' command in PATH`, then follow its prompt. You can then enter
+commands like these:
+
 ```shell
-open --new -a "Visual Studio Code" --args --new-window ~/.bashrc
+code ./
+code file-name
 ```
 
-It is necessary to tell `open(1)` to open a new window (`--new`) and to tell VS
-Code to create a new window `--new-window`.
+Contrary to what it says, on MacOS, this command dos not update PATH but creates
+this:
+
+`/usr/local/bin/code: symbolic link to /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code`
+
+Or use the `open(1)` command, as in this example:
+
+```shell
+open --new -a "Visual Studio Code" --args --new-window file-name
+```
+
+It is necessary to tell `open(1)` to open a new window (`--new`) *and* to tell
+VS Code to create a new window with `--new-window`.
 
 ### Open a directory with VS Code from Finder
 
@@ -236,12 +252,14 @@ Use `Automator` to create a `Quick Action` for Files and Folders.
 
 1. Start `Automator`
 2. Click on `Quick Action`, Click on `Choose`
-3. Set `Workflow recieves current` to `Files or Folders` in `Finder`
+3. Set `Workflow receives current` to `Files or Folders` in `Finder`
 4. Click on `Image` and `Choose`. This opens a Finder-type window
 5. Click on `Application`
 6. Click on `Visual Studio Code`, click on `Choose` Note that `Image` is now
    `Custom`
-7. Click on `File` > `Save` (or `Command` + `S`) and enter something like "Open
+7. Find `Open Finder items` in the Library
+8. Clock on `Open With`, then find `Visual Studio Code`
+9. Click on `File` > `Save` (or `Command` + `S`) and enter something like "Open
    with Visual Studio Code".
 
 To use what you just created:
@@ -663,3 +681,11 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Fi
 
 - `Option` + Left-click (two fingers on track pad)
 - While holding `Option`, select `Copy ... as Pathname`
+
+### Navigation
+
+- `Command` + Up-Arrow to go up a directory level.
+
+## MacOS bash weirdnesses
+
+See `/etc/bashrc` which leads to `/etc/bashrc_Apple_Terminal`.
