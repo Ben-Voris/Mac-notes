@@ -470,16 +470,18 @@ These use `defaults(1)` to "access the Mac OS X user defaults system".
 ### Prevent rearranging the dock
 
 When using the trackpad, and the default configuration, I find it too easy to
-accidentally rearrange the dock. Here's a `zsh` command to prevent that.
+accidentally rearrange the dock. Here's a command to prevent that.
 
 ```shell
-defaults write com.apple.Dock contents-immutable -bool true; killall Dock
+defaults write com.apple.Dock contents-immutable -bool true && killall Dock
 ```
+
+When this `contents-immutable` is set, apps cannot be drug into the dock.
 
 ### Allow rearranging the dock
 
 ```shell
-defaults write com.apple.Dock contents-immutable -bool false; killall Dock
+defaults write com.apple.Dock contents-immutable -bool false && killall Dock
 ```
 
 `defaults` can also be used to control whether one can change the docks's
@@ -668,6 +670,11 @@ xattr: <file>: No such xattr: com.apple.quarantine
 ```
 
 ## Finder
+
+### Control what a new Finder window shows
+
+`Finder` > `Settings` > `General`: Change the value of
+`New Finder windows show`.
 
 ### Show path
 
