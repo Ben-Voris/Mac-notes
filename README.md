@@ -248,7 +248,7 @@ VS Code to create a new window with `--new-window`.
 
 Use `Automator` to create a `Quick Action` for Files and Folders.
 
-[Open a Folder in Vscode through Finder in MacOS](https://stackoverflow.com/questions/64040393/open-a-folder-in-vscode-through-finder-in-macos)
+[Open a Folder in VS Code through Finder in MacOS](https://stackoverflow.com/questions/64040393/open-a-folder-in-vscode-through-finder-in-macos)
 
 1. Start `Automator`
 2. Click on `Quick Action`, Click on `Choose`
@@ -371,6 +371,14 @@ Existing chats from other devices are not synchronized.
 A photo cataloging tool I used on Linux
 
 <https://www.digikam.org/download/>
+
+Installing this requires the same steps as [exiftool](#to-install-exiftool).
+
+### GPSBabel
+
+A GPS format converter.
+
+<https://github.com/gpsbabel/gpsbabel>
 
 Installing this requires the same steps as [exiftool](#to-install-exiftool).
 
@@ -721,7 +729,7 @@ ls: Library/Safari: Operation not permitted
 From `ls(1)`
 
 > If the file or directory has extended attributes, the permissions field
-> printed by the -l option is followed by a '@' character.  Otherwise, if the
+> printed by the -l option is followed by a '@' character. Otherwise, if the
 > file or directory has extended security information (such as an access control
 > list), the permissions field printed by the -l option is followed by a '+'
 > character.  If the -% option is given, a '%' character follows the permissions
@@ -736,7 +744,7 @@ Permission is granted in `System Settings` > `Privacy & Security`.
 
 ## MacOS network configuration
 
-/etc/resolv.conf:
+### DNS configuration
 
 `/etc/resolv.conf`, which is a symbolic link to `/private/etc/resolv.conf`,
 which is a symbolic link to `../var/run/resolv.conf` contains this:
