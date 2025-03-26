@@ -1,5 +1,8 @@
 # Mac usage notes
 
+A pretty version at <https://ben-voris.github.io/Mac-notes/>
+The raw version at <https://github.com/Ben-Voris/Mac-notes.git>
+
 ## Function keys
 
 [How to use the function keys on your Mac](https://support.apple.com/en-us/102439)
@@ -381,6 +384,29 @@ A GPS format converter.
 <https://github.com/gpsbabel/gpsbabel>
 
 Installing this requires the same steps as [exiftool](#to-install-exiftool).
+
+### OpenJDK (Java)
+
+Download the tar from <https://jdk.java.net/23/>
+
+Install in /usr/local with
+
+```shell
+sudo tar -xf ~/Downloads/toInstall/openjdk-23.0.2_macos-aarch64_bin.tar.gz -C /usr/local/bin/
+```
+
+Or put it in your home directory with
+
+```shell
+tar -xf ~/Downloads/toInstall/openjdk-23.0.2_macos-aarch64_bin.tar.gz -C ~/
+```
+
+Then add this to your `.bashrc` or similar:
+
+```shell
+export JAVA_HOME=/usr/local/bin/jdk-23.0.2.jdk/Contents/Home/
+PATH="${PATH}:${JAVA_HOME}/bin:"
+```
 
 ### Garmin programs
 
@@ -768,3 +794,152 @@ which is a symbolic link to `../var/run/resolv.conf` contains this:
 
 The `nameserver` values listed in `resolv.conf` come from
 `System Settings` > `Network` > `Details` (of current connection) > `DNS`
+
+## Users and groups
+
+MacOS does not use `/etc/passwd`.
+
+To edit a user from `Settings` > `Control` + Click on the user name.
+"Advanced Options..." should appear. Click on it.
+
+From the command line, use `dscacheutil` and `dseditgroup` and maybe
+`chsh` and `passwd`
+
+### Change shell
+
+```shell
+sudo chpass -s /opt/local/bin/bash bvoris
+```
+
+Without `sudo`, this will fail with
+`"chpass: /opt/local/bin/bash: non-standard shell"`
+
+### Print information about a group
+
+```shell
+dscacheutil -q group -a name _developer
+```
+
+```shell
+dscl . -read /Groups/_developer
+```
+
+### Print information about a user
+
+```shell
+dscacheutil -q user -a name bvoris
+```
+
+The output of this next command includes an encoded picture, so its very long.
+
+```shell
+dscl . -read /Users/bvoris
+```
+
+### members script
+
+```shell
+#!/bin/bash
+
+# members -- list all members of a group
+#
+# SYNOPSIS
+#   members groupname
+#
+# http://superuser.com/questions/279891/list-all-members-of-a-group-mac-os-x
+#  by Arne
+# Expected to work on Mac OS 10.5 and newer, tested on 10.6 and 10.7.
+# It could be rewritten to work on 10.4 by using "dseditgroup -o checkmember"
+# instead of "dsmemberutil checkmembership".
+# By using dseditgroup, the script could also be extended to handle
+# other Directory Service nodes than the default local node.
+#
+
+the_group="$1"
+# Input check and usage
+  if [[ $# != 1 || $1 == -* || $1 =~ [[:space:]] ]]; then
+    echo "Usage: ${0##*/} groupname" >&2
+    echo "Lists all members of the group." >&2
+    exit 64
+  elif (dsmemberutil checkmembership -U root -G "$the_group" 2>&1 \
+    | grep "group .* cannot be found") >&2; then
+    exit 1
+  fi
+
+# Check every user
+exec dscl . -list /Users \
+  | while read each_username
+  do
+    printf "$each_username "
+    dsmemberutil checkmembership -U "$each_username" -G "$the_group"
+  done \
+    | grep "is a member" | cut -d " " -f 1
+```
+
+## man pages
+
+Apples supports both `man` and `info` but `man -k` (search for a command) and
+`whatis` always outputs "nothing appropriate".
+
+Try `man makewhatis` and `man whatis`.
+
+```shell
+: echo $MANPATH
+:/usr/share/man
+```
+
+```shell
+ sudo /usr/libexec/makewhatis
+```
+
+fails with `"makewhatis: /usr/share/man/whatis.tmp: Read-only file system"`.
+
+```text
+/opt/local/bin/whatis cp
+whatis: nothing appropriate
+```
+
+```shell
+/usr/bin/whatis cp
+```
+
+gives lots of ugly output (`groff` errors?) but eventually shows `cp(1)`
+
+### port man-db
+
+```shell
+sudo port install man-db
+```
+
+Outputs this:
+
+```text
+  found in man-db-2.13.0/config.log
+--->  Building man-db
+--->  Staging man-db into destroot
+--->  Installing man-db @2.13.0_0
+--->  Activating man-db @2.13.0_0
+Error: Failed to activate man-db: The following ports have active files that conflict with man-db's:
+mandoc @1.14.6_0
+  /opt/local/bin/apropos
+  /opt/local/bin/man
+  /opt/local/bin/whatis
+  (... 3 more not shown)
+Image error: Conflicting file(s) present. Please deactivate the conflicting port(s) first, or use 'port -f activate man-db' to force the activation.
+    while executing
+"throw registry::image-error $msg"
+    ("foreach" body line 35)
+    invoked from within
+"foreach file $imagefiles {
+                incr progress_step
+                _progress update $progress_step $progress_total_steps
+                se..."
+    invoked from within
+"registry::write {
+            foreach file $imagefiles {
+                incr progress_step
+                _progress update $progress_step $progress_..."
+Error: See /opt/local/var/macports/logs/_opt_local_var_macports_sources_rsync.macports.org_macports_release_tarballs_ports_textproc_man-db/man-db/main.log for details.
+Error: Follow https://guide.macports.org/#project.tickets if you believe there is a bug.
+Error: Processing of port man-db failed
+```
