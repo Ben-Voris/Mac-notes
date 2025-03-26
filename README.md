@@ -1,7 +1,8 @@
 # Mac usage notes
 
-A pretty version at <https://ben-voris.github.io/Mac-notes/>
-The raw version at <https://github.com/Ben-Voris/Mac-notes.git>
+This is <https://github.com/Ben-Voris/Mac-notes.git>.
+
+A prettier version is at <https://ben-voris.github.io/Mac-notes/>.
 
 ## Function keys
 
