@@ -454,12 +454,18 @@ To avoid the annoying warning about zsh when starting bash, put this into
 export BASH_SILENCE_DEPRECATION_WARNING=1
 ```
 
-Sometimes `Control` + `C` stops working and you'll hear a beep. When this
-happens, try `Command` + `.`
+Sometimes `Control` \+ `C` stops working and you'll hear a beep. When this
+happens, try `Command` \+ `.`
 
 When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
+
+### Copying file names from Finder to Terminal
+
+First, [select a file or files in Finder](#selecting-files-in-finder), then drag
+the files to a Terminal window using `Command` \+ Click, much like
+[moving files in Finder](#moving-files-in-finder).
 
 ## Accessing the Photo Library
 
@@ -617,20 +623,20 @@ to display the attached device, as shown above.
    - Record Entire Screen
    - Record Selected Portion. You can adjust the selected portion by dragging
      its borders with your mouse or trackpad.
-3. Before starting your recording, you can click Options in the toolbar to
+3. Before starting your recording, you can click `Options` in the toolbar to
    change the recording settings:
     - To record your voice or other audio with the screen recording, choose a
       microphone.
-    - To show a black circle around your pointer when you click, choose Show
-      Mouse Clicks.
+    - To show a black circle around your pointer when you click, choose
+      `Show Mouse Clicks`.
     - To set a recording timer, choose the number of seconds to wait before
-      recording begins after you click Record.
+      recording begins after you click `Record`.
     - To change where the recording will be saved after you stop recording,
       choose a different “Save to” location. By default, recordings are saved to
       your desktop.
-4. To start recording, click the Record button in the Screenshot toolbar.
-5. To stop recording, click the Stop button in the menu bar, or press
-   Command-Control-Esc (Escape).
+4. To start recording, click the `Record` button in the Screenshot toolbar.
+5. To stop recording, click the `Stop` button in the menu bar, or press
+   `Command` + `Control` + `esc` (Escape).
 6. When you see a thumbnail of the recording in the corner of your screen, click
    it to edit the recording. Or wait for the recording to save to your desktop.
 
@@ -639,28 +645,28 @@ to display the attached device, as shown above.
 ### Use QuickTime Player
 
 1. Open QuickTime Player from your Applications folder.
-2. From the menu bar, choose File > New Screen Recording. Or press
-   Control-Command-N.
+2. From the menu bar, choose `File` > `New Screen Recording`. Or press
+   `Control` + `Command` + `N`.
     - If you see the onscreen controls described above, screen recording on your
       Mac is performed by the Screenshot app. Follow the steps in the previous
       section.
     - If you see the Screen Recording window described below, screen recording
       on your Mac is performed by QuickTime Player. Continue to the next step.
-3. Before starting your recording, you can click the arrow next to the Record
-   buttonNo alt supplied for Image to change the recording settings:
+3. Before starting your recording, you can click the arrow next to the `Record`
+   button to change the recording settings:
     - To record your voice or other audio with the screen recording, choose a
       microphone. To monitor that audio during recording, adjust the volume
       slider. If you get audio feedback, lower the volume or use headphones with
       a microphone.
-    - To show a black circle around your pointer when you click, choose Show
-      Mouse Clicks in Recording.
-4. To start recording, click the Record buttonNo alt supplied for Image and then
+    - To show a black circle around your pointer when you click, choose
+      `Show Mouse Clicks in Recording`.
+4. To start recording, click the Record button and then
    take one of these actions:
     - Click anywhere on the screen to begin recording the entire screen.
-    - Or drag to select an area to record, then click Start Recording within
+    - Or drag to select an area to record, then click `Start Recording` within
       that area.
-5. To stop recording, click the Stop buttonNo alt supplied for Image in the menu
-   bar, or press Command-Control-Esc (Escape).
+5. To stop recording, click the `Stop` button in the menu
+   bar, or press `Command` + `Control` + `ecc` (Escape).
 6. After you stop recording, QuickTime Player automatically opens the recording.
    You can now play, edit, or share the recording.
 
@@ -727,6 +733,51 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Fi
 ### Navigation
 
 - `Command` + Up-Arrow to go up a directory level.
+
+### Selecting files in Finder
+
+Select a file by clicking on it. To select additional files, either `Command` \+
+Click on each additional file or, to select a range of files, `Shift` \+ Click
+on the last file in the range.
+
+### Moving files in Finder
+
+First [select a file or files](#selecting-files-in-finder). Next press `Command`
+\+ Click on one of the selected files and drag the files to the desired
+directory, which can be in the same Finder windows, another, Finder window or
+the desktop. Once you start dragging, you can release the `Command` key.
+
+To cancel the move, drop the selected file(s) back in their original location.
+
+### Controlling what app opens a file
+
+- `Control` \+ Click on a file
+- Click on `Open With`
+- If you
+- If the desired app is listed, click on it, otherwise click on `Other...` and find the
+  desired app.
+
+To make this change permanent, even if the desired app is listed, do *not* pick
+it from the list. Instead, click on `Other...`, find the desired app, check the
+box `Always Open With`, then click on `Open`.
+
+Though this change is registered somewhere and controls what app Finder uses to
+open a file, it does not
+[change the default app for the file type](#controlling-the-default-app-for-a-file-type).
+(To be sure, I don't know all of the implications of the "default app".) It
+might be that this only permanently changes the app that is used to open the
+selected file (at least that's how I interpreted some discussion of a "resource
+fork"). See the [ResForge](https://github.com/andrews05/ResForge) project, the
+[Resource Fork](https://apple.fandom.com/wiki/Resource_fork) wiki, and
+[File system formats available in Disk Utility on Mac](https://support.apple.com/guide/disk-utility/file-system-formats-dsku19ed921c/mac).
+
+### Controlling the default app for a file type
+
+- `Control` + Click on a file
+- Click on `Get info`
+- Expand `Open with`
+- Click on the dropdown list of apps and select the desired app
+- Click on `Change All...`
 
 ## MacOS shell weirdnesses
 
