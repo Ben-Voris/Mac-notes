@@ -753,7 +753,6 @@ To cancel the move, drop the selected file(s) back in their original location.
 
 - `Control` \+ Click on a file
 - Click on `Open With`
-- If you
 - If the desired app is listed, click on it, otherwise click on `Other...` and find the
   desired app.
 
