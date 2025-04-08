@@ -777,6 +777,9 @@ fork"). See the [ResForge](https://github.com/andrews05/ResForge) project, the
 - Expand `Open with`
 - Click on the dropdown list of apps and select the desired app
 - Click on `Change All...`
+- This will display "Are you sure you want to change all similar documents to
+  open with the application "*app-name*"? This change will apply to all
+  documents with extension ".*extension*.". Click `Continue`.
 
 ## MacOS shell weirdnesses
 
