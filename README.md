@@ -725,17 +725,18 @@ To display the path as text, instead of a series of icons.
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Finder
 ```
 
-### Copy path
+### Finder copy path
 
 - `Option` + Left-click (two fingers on track pad)
 - While holding `Option`, select `Copy ... as Pathname`
 
-### Navigation
+### Finder directory navigation shortcuts
 
-- `Command` + Up-Arrow to go up a directory level (i.e., `cd ..`).
-- `Command` + Down-Arrow to return to the previous directory. (i.e., `cd -`).
+- `Command` + Up-Arrow to go up a directory level I.e., `cd ..`.
+- `Command` + Down-Arrow to return to the previous directory. I.e., `cd -`.
 - `Command` + `Shift` + `g` Opens a dialog that accepts a directory. This does
   not accept `..` or `../` but does accept `~`.
+- `Command` + `Shift` + `h`. Jump to user's home directory. I.e., `cd ~`.
 
 ### Selecting files in Finder
 
