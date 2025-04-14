@@ -732,7 +732,10 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Fi
 
 ### Navigation
 
-- `Command` + Up-Arrow to go up a directory level.
+- `Command` + Up-Arrow to go up a directory level (i.e., `cd ..`).
+- `Command` + Down-Arrow to return to the previous directory. (i.e., `cd -`).
+- `Command` + `Shift` + `g` Opens a dialog that accepts a directory. This does
+  not accept `..` or `../` but does accept `~`.
 
 ### Selecting files in Finder
 
