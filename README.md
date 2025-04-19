@@ -461,6 +461,18 @@ When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
 
+### Terminal Keyboard shortcuts
+
+[Keyboard shortcuts in Terminal on Mac](https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac)
+
+Do *not* confuse `Command` with `Control`. For example, `Command` + `D` splits the terminal window
+into two panes but `Control` + `D` is an end-of-file.
+
+The keyboard shortcuts cannot be disabled. They can be assigned to a different chord.
+
+ (`Shift` + `Command` + `D` undoes the split created by `Command` + `D`.)
+
+
 ### Copying file names from Finder to Terminal
 
 First, [select a file or files in Finder](#selecting-files-in-finder), then drag
