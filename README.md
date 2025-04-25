@@ -472,7 +472,6 @@ The keyboard shortcuts cannot be disabled. They can be assigned to a different c
 
  (`Shift` + `Command` + `D` undoes the split created by `Command` + `D`.)
 
-
 ### Copying file names from Finder to Terminal
 
 First, [select a file or files in Finder](#selecting-files-in-finder), then drag
@@ -507,6 +506,8 @@ To copy from iPhone to Mac or NAS
 [PhotoSync – transfer photos on App store](https://apps.apple.com/us/app/photosync-transfer-photos/id415850124)
 [Visit `photosync-app.com` for a complete feature list.](https://photosync-app.com)
 
+#### Photo Exifer app
+
 [Photo Exifer](https://www.fireebok.com/photo-exif-for-ios.html) claims to
 import XMP data to the Photos app. See
 [How to import XMP sidecars to Photos on Mac?](https://www.fireebok.com/resource/how-to-import-xmp-sidecars-to-photos-on-mac.html)
@@ -515,6 +516,16 @@ import XMP data to the Photos app. See
 > files from Apple Photos and JSON files from Google Photos. It allows you to
 > read photo metadata from XMP and JSON files and write it back to the
 > corresponding photos
+
+Photo Exifer likely cannot write files to a RAW file. It does not create an XMP file.
+
+#### `mlds(1)`
+
+`mdls` lists the metadata attributes for the specified file
+
+It will display GPS info, etc. from a photo that has data.
+
+Note that GPS data added to a photo using the Photos app is not written to the file.
 
 ## Controlling the dock
 
