@@ -498,6 +498,9 @@ This command launches the Preview app from the zsh (not bash) command line:
 open -a Preview -- "${HOME}/Pictures/Photos Library.photoslibrary/originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 ```
 
+<https://github.com/RhetTbull/osxphotos> gives information about files stored in
+the photo database.
+
 ### Things to check out for Photos
 
 [iCloud Photo downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
