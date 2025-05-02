@@ -423,6 +423,17 @@ PATH="${PATH}:${JAVA_HOME}/bin:"
 - Garmin WebUpdater for Mac - This should update the e-collars but gives a
   warning about running on a Mac.
 
+### Install `osxphotos`
+
+Requires [`Macports`](#macports).
+
+[`osxphotos`](https://github.com/RhetTbull/osxphotos) gives information about
+files stored in the photo database.
+
+```shell
+sudo port install osxphotos
+```
+
 ### From Mac App store
 
 - Amazon Prime Video
@@ -498,8 +509,10 @@ This command launches the Preview app from the zsh (not bash) command line:
 open -a Preview -- "${HOME}/Pictures/Photos Library.photoslibrary/originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 ```
 
-<https://github.com/RhetTbull/osxphotos> gives information about files stored in
-the photo database.
+See [osphotos](#install-osxphotos)
+
+If you have the full path to the photo, the terminal `open` command will open
+the preview app.
 
 ### Things to check out for Photos
 
