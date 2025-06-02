@@ -337,14 +337,9 @@ Sign into GitHub.
 
 [`exiftool`](https://exiftool.org)
 
-- macOS will display "Apple could not verify .... is free of malware ..." and
-  will offer to "Move to Trash". Click `Done`.
-- Open `System Settings` > `Privacy & Security`
-- At the bottom, under `Security`, you should see the package you tried to
-  install. Click on `Open Anyway` and the click on it again. Then enter your
-  local password (not for the Apple account).
-- A window should open that lets you install the app, including changing the
-  directory.
+macOS will display "Apple could not verify .... is free of malware ..." and
+will offer to "Move to Trash". Click `Done` and follow the steps in
+[Removing a file from quarantine](#removing-a-file-from-quarantine).
 
 ### To install SQLLite browser
 
@@ -376,7 +371,8 @@ A photo cataloging tool I used on Linux
 
 <https://www.digikam.org/download/>
 
-Installing this requires the same steps as [exiftool](#to-install-exiftool).
+Installing this requires
+[removing the installer from quarantine](#removing-a-file-from-quarantine).
 
 ### GPSBabel
 
@@ -384,7 +380,8 @@ A GPS format converter.
 
 <https://github.com/gpsbabel/gpsbabel>
 
-Installing this requires the same steps as [exiftool](#to-install-exiftool).
+Installing this requires
+[removing the installer from quarantine](#removing-a-file-from-quarantine).
 
 ### OpenJDK (Java)
 
@@ -509,7 +506,7 @@ This command launches the Preview app from the zsh (not bash) command line:
 open -a Preview -- "${HOME}/Pictures/Photos Library.photoslibrary/originals/0/0FB91698-EF23-48BF-96A9-F7902A77E118.jpeg
 ```
 
-See [osphotos](#install-osxphotos)
+See [`osphotos`](#install-osxphotos)
 
 If you have the full path to the photo, the terminal `open` command will open
 the preview app.
@@ -724,8 +721,16 @@ to display the attached device, as shown above.
 If you try to open a file and get the message "Apple could not verify ... is
 free of malware" and you're sure the file is safe, you can mark it as safe.
 
-For an install programs, see the
-[instructions for installing `exiftool`](#to-install-exiftool).
+For an install programs
+
+- macOS will display "Apple could not verify .... is free of malware ..." and
+  will offer to "Move to Trash". Click `Done`.
+- Open `System Settings` > `Privacy & Security`
+- At the bottom, under `Security`, you should see the package you tried to
+  install. Click on `Open Anyway` and the click on it again. Then enter your
+  local password (not for the Apple account).
+- A window should open that lets you install the app, including changing the
+  directory.
 
 Otherwise:
 
@@ -733,7 +738,7 @@ Otherwise:
 xattr -d com.apple.quarantine <file-name>
 ```
 
-Or, if using `zsh`, enter this, with a trailing space.
+Or, enter this, with a trailing space.
 
 ```shell
 xattr -d com.apple.quarantine
