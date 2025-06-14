@@ -790,12 +790,28 @@ on the last file in the range.
 
 ### Moving files in Finder
 
+#### Moving files method one
+
+First [select a file or files](#selecting-files-in-finder), then `Command` \+
+`C`, then select the target, and click either click on `Edit` > `Paste` or right
+click on the source then click on `Paste`. (Do not use `Command` \+ `V` as that
+will copy the files.)
+
+#### Moving files method two
+
+This doesn't work and I don't know what I left out or mistyped.
+
 First [select a file or files](#selecting-files-in-finder). Next press `Command`
 \+ Click on one of the selected files and drag the files to the desired
 directory, which can be in the same Finder windows, another, Finder window or
 the desktop. Once you start dragging, you can release the `Command` key.
 
 To cancel the move, drop the selected file(s) back in their original location.
+
+#### Moving files method three
+
+Right click (two fingers on the trackpad) on the source, click on `Copy`.
+Right click on the source, click on `Paste`.
 
 ### Controlling what app opens a file
 
