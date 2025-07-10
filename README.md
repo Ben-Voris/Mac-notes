@@ -73,8 +73,10 @@ Much of this is from
 
 ### More text editing keys
 
-- `Delete`: Deletes the character to the left, i.e., Linux backspace.
+- `Delete`: Deletes the character to the left of the cursor, i.e., Linux backspace.
 - `Fn` + `Delete`: Delete the character to the right, i.e., Linux delete.
+- `Option` + `Delete`: delete the word to the left of the cursor.
+- `Fn` + `Option` + `Delete`: delete the word to the right of the cursor.
 
 ### Moving on the line and up an down lines
 
@@ -176,18 +178,17 @@ fingers.
 
 ## Apple Mail app
 
-- `Option` + `Delete` Deletes highlighted message without advancing to the next
-  message.
-- `Command` + `Shift` + `N`: Refresh mailbox.
-- `Command` + `Shift` + `+`: Increase displayed size of message content (zoom
-  in).
-- `Command` + `Shift` + `-`: Decrease displayed size of message content (zoom
-  out).
+- `Option` \+  `Delete` When focus is in the message header view, deletes the
+   highlighted message without advancing to the next message. If this is what
+   you want as the default, uncheck `Settings` \> `Viewing` \>
+   `Automatically view next message after discarding or archiving a message`.
+- `Command` \+ `Shift` \+ `N`: Refresh mailbox.
+- `Command` \+ `Shift` \+ `+`: When focus is on a message, increases the
+  displayed size of the message content (zoom in).
+- `Command` \+ `Shift` \+ `-`: When focus is on a message, decreases the
+  displayed size of the message content (zoom out).
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
-
-NB: Something is leaving deleted messages in the inbox. They are marked as read.
-Wtf?
 
 ## Messages app
 
