@@ -825,13 +825,11 @@ To make this change permanent, even if the desired app is listed, do *not* pick
 it from the list. Instead, click on `Other...`, find the desired app, check the
 box `Always Open With`, then click on `Open`.
 
-Though this change is registered somewhere and controls what app Finder uses to
-open a file, it does not
+This changed the default app used to open this file and does not
 [change the default app for the file type](#controlling-the-default-app-for-a-file-type).
-(To be sure, I don't know all of the implications of the "default app".) It
-might be that this only permanently changes the app that is used to open the
-selected file (at least that's how I interpreted some discussion of a "resource
-fork"). See the [ResForge](https://github.com/andrews05/ResForge) project, the
+
+For more information, see the
+[ResForge](https://github.com/andrews05/ResForge) project, the
 [Resource Fork](https://apple.fandom.com/wiki/Resource_fork) wiki, and
 [File system formats available in Disk Utility on Mac](https://support.apple.com/guide/disk-utility/file-system-formats-dsku19ed921c/mac).
 
