@@ -798,9 +798,11 @@ First [select a file or files](#selecting-files-in-finder), then `Command` \+
 click on the source then click on `Paste`. (Do not use `Command` \+ `V` as that
 will copy the files.)
 
+***This did not work today. Wtf?***
+
 #### Moving files method two
 
-This doesn't work and I don't know what I left out or mistyped.
+***This did not work and now it does. Wtf?***
 
 First [select a file or files](#selecting-files-in-finder). Next press `Command`
 \+ Click on one of the selected files and drag the files to the desired
@@ -810,6 +812,8 @@ the desktop. Once you start dragging, you can release the `Command` key.
 To cancel the move, drop the selected file(s) back in their original location.
 
 #### Moving files method three
+
+***This did not work today. Wtf?***
 
 Right click (two fingers on the trackpad) on the source, click on `Copy`.
 Right click on the source, click on `Paste`.
