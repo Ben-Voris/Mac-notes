@@ -719,10 +719,11 @@ to display the attached device, as shown above.
 
 ## Removing a file from quarantine
 
-If you try to open a file and get the message "Apple could not verify ... is
-free of malware" and you're sure the file is safe, you can mark it as safe.
+If you try to open a downloaded file and get the message "Apple could not verify
+... is free of malware" and you're sure the file is safe, you can mark it as
+safe.
 
-For an install programs
+### Removing a file from quarantine for an install programs
 
 - macOS will display "Apple could not verify .... is free of malware ..." and
   will offer to "Move to Trash". Click `Done`.
@@ -732,6 +733,8 @@ For an install programs
   local password (not for the Apple account).
 - A window should open that lets you install the app, including changing the
   directory.
+
+### Removing a file from quarantine from terminal
 
 Otherwise:
 

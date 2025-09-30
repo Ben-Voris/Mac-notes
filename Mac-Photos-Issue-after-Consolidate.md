@@ -26,7 +26,7 @@ executing `Consolidate`, they are kept.
 While troubleshooting this bug, I used `exiftool` to display the metadata of the
 the "consolidated" file and see that this step rewrites some of the metadata in
 the new file. (I used `osxphotos` to get the file name within `~/Photos`.) I
-don’t know if it updates the SQLite db with those changes.
+don’t know if `Photos` updates its SQLite db with those changes.
 
 I wondered if the exif data might contain something that Apple doesn’t like, so
 I rewrote the metadata using `exiftool`’s `-unsafe` option. As I understand
