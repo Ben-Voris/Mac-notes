@@ -588,7 +588,7 @@ took tens of minutes because it pulled so many dependencies - 465 packages per
 [Thoughts on macOS Package Managers](https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/)
 is in favor of MacPorts because it is more consistent with Linux and issues with
 how the project is run. Notes that Homebrew is sometimes updated more quickly.
-Though this is old, more recent pages link to it.
+Though the linked article is old, more recent pages link to it.
 
 Responses to this
 [Reddit](https://www.reddit.com/r/MacOS/comments/17e85da/homebrew_vs_macports/)
@@ -602,6 +602,12 @@ Homebrew depends on the MacOS libraries. Also notes that its refusal to share
 - [MacPorts install](https://www.macports.org/install.php)
 - [Guide to MacPorts](https://guide.macports.org)
 - [MacPorts GitHub](https://github.com/macports).
+
+Keeping ports up to date:
+
+```shell
+sudo port selfupdate && sudo port upgrade outdated
+```
 
 ### Homebrew
 
