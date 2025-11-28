@@ -44,8 +44,9 @@ Much of this is from
 - `Command` + `P`: Open a print dialog so that you can print the current document.
 - `Command` + `S`: Save the current document.
 - `Command` + `T`: Open a new tab.
-- `Command` + `W`: Close the front window. To close all windows of the app, press
-  `Option` + `Command` + `W`.
+- `Command` + `W`: Close the front window. In [Safari](#safari], this closes the
+  current tab.
+- `Option` + `Command` + `W` closes all windows of the app.
 - `Option` + `Command` + `Esc`: Force quit an app.
 - `Command` + `Space bar`: Show or hide the Spotlight search field. To perform a
   Spotlight search from a Finder window, press `Command` + `Option` + `Space bar`. (If you
@@ -70,6 +71,7 @@ Much of this is from
 - `Control`+ `Command` + `N`: Create a new folder that contains the currently selected
   items.
 - `Command` + `,` (Comma): Open settings (preferences) for the front app.
+- To speak a text selection: `Option` + Esc.
 
 ### More text editing keys
 
@@ -189,6 +191,7 @@ fingers.
   displayed size of the message content (zoom out).
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
+- When a message is selected `Command` + `Delete` deletes it.
 
 ## Messages app
 
@@ -205,6 +208,7 @@ fingers.
   reopens it.
 - Two finger swipe left and right on the trackpad are equivalent to the left
   and right arrows (`Show the previous page` and `Show the next page`).
+- `Command` + `W` closes a tab.
 
 ## VS Code
 
@@ -856,6 +860,11 @@ For more information, see the
 - This will display "Are you sure you want to change all similar documents to
   open with the application "*app-name*"? This change will apply to all
   documents with extension ".*extension*.". Click `Continue`.
+
+### Delete a file
+
+- Select the file(s) and press `Command` + `Delete`
+- Select the file(s) and right-click (two finger tap), then click on `Move to Trash`
 
 ## MacOS shell weirdnesses
 
