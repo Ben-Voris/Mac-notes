@@ -44,7 +44,7 @@ Much of this is from
 - `Command` + `P`: Open a print dialog so that you can print the current document.
 - `Command` + `S`: Save the current document.
 - `Command` + `T`: Open a new tab.
-- `Command` + `W`: Close the front window. In [Safari](#safari], this closes the
+- `Command` + `W`: Close the front window. In [Safari](#safari), this closes the
   current tab.
 - `Option` + `Command` + `W` closes all windows of the app.
 - `Option` + `Command` + `Esc`: Force quit an app.
@@ -191,7 +191,7 @@ fingers.
   displayed size of the message content (zoom out).
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
-- When a message is selected `Command` + `Delete` deletes it.
+- When a message is selected `Command` \+ `Delete` deletes it.
 
 ## Messages app
 
