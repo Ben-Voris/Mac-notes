@@ -880,8 +880,23 @@ For more information, see the
 ### Delete a file
 
 - Select the file(s) and press `Command` \+ `Delete`
-- Select the file(s) and right-click (two finger tap), then click on
+- Select the file(s) and [right click](#point--click), then click on
   `Move to Trash`
+
+### Opening a Finder directory in a terminal tab
+
+- `System Preferences window` &rarr;  `Keyboard` &rarr; `Keyboard Shortcuts`
+  opens a new sub-window.
+- On the left side of this new window, find `Services` at the bottom of the
+  list. Click on in.
+- Check the box `New Terminal Tab at Folder`
+
+![Keyboard Services](./Pics/Screenshot-Keyboard-Services_2025-12-06.png)
+
+To use this shortcut, [right click](#point--click) on the *directory*
+name in `Finder`. This shortcut is *not* available when the contents of a folder
+are being viewed. That is, one cannot right-click in the whitespace of an open
+folder.
 
 ## MacOS shell weirdnesses
 
