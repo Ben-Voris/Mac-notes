@@ -891,7 +891,7 @@ For more information, see the
   list. Click on in.
 - Check the box `New Terminal Tab at Folder`
 
-![Keyboard Services](./Pics/Screenshot-Keyboard-Services_2025-12-06.png)
+![Keyboard Services](./Pics/Screenshot-Keyboard-Services_2025-12-06.png "Keyboard Services")
 
 To use this shortcut, [right click](#point--click) on the *directory*
 name in `Finder`. This shortcut is *not* available when the contents of a folder
