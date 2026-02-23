@@ -486,6 +486,10 @@ When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
 exited cleanly".
 
+### Accessing the clipboard
+
+See `pbcopy(1)` and `pbpaste(1)`.
+
 ### Terminal Keyboard shortcuts
 
 [Keyboard shortcuts in Terminal on Mac](https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac)
