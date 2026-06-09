@@ -902,6 +902,29 @@ name in `Finder`. This shortcut is *not* available when the contents of a folder
 are being viewed. That is, one cannot right-click in the whitespace of an open
 folder.
 
+### hidden (`dot`) files not shown
+
+For example, Finder does not show `~/.bashrc` by default.
+
+`Command` \+ `Shift` \+ `.` (Period) toggles the display of hidden files and folders on and off.
+
+To display hidden files permanently set it via Terminal and then restart Finder:
+
+```shell
+defaults write com.apple.finder AppleShowAllFiles -bool true && \
+killall Finder
+```
+
+Reverse it with:
+
+```shell
+defaults write com.apple.finder AppleShowAllFiles -bool false && \
+killall Finder
+```
+
+The toggle (⌘⇧.) and the defaults setting are independent—the toggle is a
+per-session override, while the defaults write makes it permanent.
+
 ## MacOS shell weirdnesses
 
 See `/etc/bashrc` which leads to `/etc/bashrc_Apple_Terminal`.
