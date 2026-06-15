@@ -790,6 +790,14 @@ xattr: <file>: No such xattr: com.apple.quarantine
 
 ## Finder
 
+### Open a Finder window from the terminal
+
+```shell
+open .
+```
+
+This opens a Finder window at the current working directory.
+
 ### Control what a new Finder window shows
 
 `Finder` &rarr; `Settings` &rarr; `General`: Change the value of
