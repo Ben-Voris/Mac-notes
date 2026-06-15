@@ -792,6 +792,8 @@ xattr: <file>: No such xattr: com.apple.quarantine
 
 ### Open a Finder window from the terminal
 
+Use `open` followed by a directory name. E.g., to open the `cwd`:
+
 ```shell
 open .
 ```
