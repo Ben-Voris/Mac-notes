@@ -64,6 +64,7 @@ Much of this is from
 - `Space bar`: Use Quick Look to preview the selected item.
 - `Command` \+ `Tab`: Switch to the next most recently used app among your open
   apps.
+- Command \+ `` ` `` (grave accent):  Switch to the next window for the current app.
 <!-- Need to escape the grave accent and format it. Using html is the most
     reliable way to do that. -->
 <!-- markdownlint-disable-next-line MD033 -->
