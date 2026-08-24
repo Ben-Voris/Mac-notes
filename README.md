@@ -779,7 +779,7 @@ Or, enter this, with a trailing space.
 xattr -d com.apple.quarantine
 ```
 
-Then drag the file from `Finder` into the Terminal window. THe Terminal will
+Then drag the file from `Finder` into the Terminal window. The Terminal will
 fill in the file path. Then press return.
 
 If you accidentally issue `xattr -d` a second time for the same file, `xattr`
