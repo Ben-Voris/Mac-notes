@@ -4,14 +4,19 @@ This is <https://github.com/Ben-Voris/Mac-notes.git>.
 
 A prettier version is at <https://ben-voris.github.io/Mac-notes/>.
 
+## MacOS 27 notes
+
+- [Tired of seeing “Ask Siri” on every context menu? Here's how to disable it.](https://www.reddit.com/r/MacOS/comments/1wgyc9q/tired_of_seeing_ask_siri_on_every_context_menu/)
+- [RemoveMacAI](https://github.com/omlahore/RemoveMacAI)
+
 ## Function keys
 
 [How to use the function keys on your Mac](https://support.apple.com/en-us/102439)
 either:
 
-- Press and hold the Function (Fn)/Globe while pressing a function key.
+- Press and hold the Function (Fn)/Globe (`🌐`) while pressing a function key.
 - To change the default behavior of the keys
-    1. Choose Apple menu  &rarr; System Settings.
+    1. Choose Apple menu  → System Settings.
     2. Click Keyboard in the sidebar.
     3. Click the Keyboard Shortcuts button on the right.
     4. Click Function Keys in the sidebar.
@@ -24,73 +29,77 @@ either:
 Much of this is from
 [Mac keyboard shortcuts](https://support.apple.com/en-us/102650)
 
-- `Command` \+ `X`: Cut the selected item and copy it to the Clipboard.
-- `Command` \+ `C`: Copy the selected item to the Clipboard. This also works for
-  files in the Finder.
-- `Command` \+ `V`: Paste the contents of the Clipboard into the current
-  document or app. This also works for files in the Finder.
-- `Command` \+ `Z`: Undo the previous command.
-- `Shift` \+ `Command` \+ `Z`: Redo, reversing the undo command. In some apps,
-   you can undo and redo multiple commands.
-- `Command` \+ `A`: Select All items.
-- `Command` \+ `F`: Find items in a document or open a Find window.
-- `Command` \+ `G`: Find Again: Find the next occurrence of the item previously
-  found.
-- `Shift` \+ `Command` \+ `G`: Find the previous occurrence of the item
+- `Command` \+ `X` (`⌘X`): Cut the selected item and copy it to the
+  Clipboard.
+- `Command` \+ `C` (`⌘C`): Copy the selected item to the Clipboard. This also
+  works for files in the Finder.
+- `Command` \+ `V` (`⌘V`): Paste the contents of the Clipboard into the
+  current document or app. This also works for files in the Finder.
+- `Command` \+ `Z` (`⌘Z`): Undo the previous command.
+- `Shift` \+ `Command` \+ `Z` (`⇧⌘Z`): Redo, reversing the undo command. In
+  some apps, you can undo and redo multiple commands.
+- `Command` \+ `A` (`⌘A`): Select All items.
+- `Command` \+ `F` (`⌘F`): Find items in a document or open a Find window.
+- `Command` \+ `G` (`⌘G`): Find Again: Find the next occurrence of the item
   previously found.
-- `Command` \+ `H`: Hide the windows of the front app. To view the front app but
-  hide all other apps, press `Option` \+ `Command` \+ `H`.
-- `Command` \+ `M`: Minimize the front window to the Dock. To minimize all
-  windows of the front app, press `Option` \+ `Command` \+ `M`.
-- `Command` \+ `O`: Open the selected item, or open a dialog to select a file to
-  open.
-- `Command` \+ `P`: Open a print dialog so that you can print the current
-  document.
-- `Command` \+ `S`: Save the current document.
-- `Command` \+ `T`: Open a new tab.
-- `Command` \+ `W`: Close the front window. In [Safari](#safari), this closes
-  the current tab.
-- `Option` \+ `Command` \+ `W` closes all windows of the app.
-- `Option` \+ `Command` \+ `Esc`: Force quit an app.
-- `Command` \+ `Space bar`: Show or hide the Spotlight search field. To perform
-  a Spotlight search from a Finder window, press `Command` \+ `Option` \+ `Space
-  bar`. (If you use multiple input sources to type in different languages, these
-  shortcuts change input sources instead of showing Spotlight.
+- `Shift` \+ `Command` \+ `G` (`⇧⌘G`): Find the previous occurrence of the
+  item previously found.
+- `Command` \+ `H` (`⌘H`): Hide the windows of the front app. To view the
+  front app but hide all other apps, press `Option` \+ `Command` \+ `H`
+  (`⌥⌘H`).
+- `Command` \+ `M` (`⌘M`): Minimize the front window to the Dock. To minimize
+  all windows of the front app, press `Option` \+ `Command` \+ `M` (`⌥⌘M`).
+- `Command` \+ `O` (`⌘O`): Open the selected item, or open a dialog to select
+  a file to open.
+- `Command` \+ `P` (`⌘P`): Open a print dialog so that you can print the
+  current document.
+- `Command` \+ `S` (`⌘S`): Save the current document.
+- `Command` \+ `T` (`⌘T`): Open a new tab.
+- `Command` \+ `W` (`⌘W`): Close the front window. In [Safari](#safari), this
+  closes the current tab.
+- `Option` \+ `Command` \+ `W` (`⌥⌘W`) closes all windows of the app.
+- `Option` \+ `Command` \+ `Esc` (`⌥⌘⎋`): Force quit an app.
+- `Command` \+ `Space bar` (`⌘Space`): Show or hide the Spotlight search
+  field. To perform a Spotlight search from a Finder window, press `Option` \+
+  `Command` \+ `Space bar` (`⌥⌘Space`). (If you use multiple input sources to
+  type in different languages, these shortcuts change input sources instead of
+  showing Spotlight.
   ([Learn how to change a conflicting keyboard shortcut](https://support.apple.com/guide/mac-help/change-a-conflicting-keyboard-shortcut-on-mac-mchlp2864/mac).)
-- `Control` \+ `Command` \+ `Space bar` or `Fn` \+ `E`: Show the Character
-  Viewer, from which you can choose emoji and other symbols.
-- `Control` \+ `Command` \+ `F`: Use or stop using the app in full screen, if
-  supported by the app.
+- `Control` \+ `Command` \+ `Space bar` (`⌃⌘Space`) or `Fn` \+ `E` (`🌐E`):
+  Show the Character Viewer, from which you can choose emoji and other symbols.
+- `Control` \+ `Command` \+ `F` (`⌃⌘F`): Use or stop using the app in full
+  screen, if supported by the app.
 - `Space bar`: Use Quick Look to preview the selected item.
-- `Command` \+ `Tab`: Switch to the next most recently used app among your open
-  apps.
-- Command \+ `` ` `` (grave accent):  Switch to the next window for the current app.
-<!-- Need to escape the grave accent and format it. Using html is the most
-    reliable way to do that. -->
-<!-- markdownlint-disable-next-line MD033 -->
-- `Command` \+ <code>`</code> (Grave accent): Switch between the windows of the
-  app you're using.
+- `Command` \+ `Tab` (`⌘⇥`): Switch to the next most recently used app among
+  your open apps.
+- `Command` \+ `` ` `` (Grave accent) (`` ⌘` ``): Switch to the next window of
+  the app you're using.
 - Screen shots
   [Learn more about screenshots](https://support.apple.com/en-us/102646).
-  - `Shift` \+ `Command` \+ `5`: In macOS Mojave or later, take a screenshot or
-      make a screen recording.
-  - `Shift` \+ `Command` \+ `3`: Captures the entire screen and saves it to the
-    desktop.
-  - `Shift` \+ `Command` \+ `4`: Captures a selection and saves it to the
-    desktop.
-- `Shift` \+ `Command` \+ `N`: Create a new empty folder in the Finder.
-- `Control` \+ `Command` \+ `N`: Create a new folder that contains the currently
-  selected items.
-- `Command` \+ `,` (Comma): Open settings (preferences) for the front app.
-- To speak a text selection: `Option` \+ `Esc`.
+  - `Shift` \+ `Command` \+ `5` (`⇧⌘5`): In macOS Mojave or later, take a
+    screenshot or make a screen recording.
+  - `Shift` \+ `Command` \+ `3` (`⇧⌘3`): Captures the entire screen and saves
+    it to the desktop.
+  - `Shift` \+ `Command` \+ `4` (`⇧⌘4`): Captures a selection and saves it to
+    the desktop.
+- `Shift` \+ `Command` \+ `N` (`⇧⌘N`): Create a new empty folder in the
+  Finder.
+- `Control` \+ `Command` \+ `N` (`⌃⌘N`): Create a new folder that contains the
+  currently selected items.
+- `Command` \+ `,` (Comma) (`⌘,`): Open settings (preferences) for the front
+  app.
+- To speak a text selection: `Option` \+ `Esc` (`⌥⎋`).
+- To type an mdash (`—`): `Option` \+ `Shift` \+ `-` (`⌥⇧-`).
 
 ### More text editing keys
 
-- `Delete`: Deletes the character to the left of the cursor, i.e., Linux
+- `Delete` (`⌫`): Deletes the character to the left of the cursor, i.e., Linux
   backspace.
-- `Fn` \+ `Delete`: Delete the character to the right, i.e., Linux delete.
-- `Option` \+ `Delete`: delete the word to the left of the cursor.
-- `Fn` \+ `Option` \+ `Delete`: delete the word to the right of the cursor.
+- `Fn` \+ `Delete` (`🌐⌫`): Delete the character to the right, i.e., Linux
+  delete.
+- `Option` \+ `Delete` (`⌥⌫`): delete the word to the left of the cursor.
+- `Fn` \+ `Option` \+ `Delete` (`🌐⌥⌫`): delete the word to the right of the
+  cursor.
 
 ### Moving on the line and up and down lines
 
@@ -98,30 +107,30 @@ These key chords behave different in different apps.
 
 In VS Code, they move both the display and where text is inserted. In some
 documents, they seem to move based on document structure. For example, in this
-Markdown document, `Control` \+ `down-arrow` can move to the last section and,
-in that case, pressing these keys a second time move to the bottom of the
-document.
+Markdown document, `Control` \+ `down-arrow` (`⌃↓`) can move to the last
+section and, in that case, pressing these keys a second time move to the bottom
+of the document.
 
 In Notes, they move what text is displayed but do not move where text is
 inserted.
 
-- `Fn` \+ `right-arrow`: In VS Code, this moves the cursor to the end of line
-  but in the Notes app, this displays the end of line but does *not* change the
-  text insertion point.
-- `Fn` \+ `left-arrow`: Depends on the app, Moves the cursor to the beginning of
-  the line.
-- `Fn` \+ `down-arrow`: Moves to the bottom of the window or document or, in
-  VS Code and Safari, Page Down
-- `Fn` \+ `up-arrow`: Moves to the top of the window or document or, in VS Code
-  and Safari, Page Up.
+- `Fn` \+ `right-arrow` (`🌐→`): In VS Code, this moves the cursor to the end
+  of line but in the Notes app, this displays the end of line but does *not*
+  change the text insertion point.
+- `Fn` \+ `left-arrow` (`🌐←`): Depends on the app, Moves the cursor to the
+  beginning of the line.
+- `Fn` \+ `down-arrow` (`🌐↓`): Moves to the bottom of the window or document
+  or, in VS Code and Safari, Page Down
+- `Fn` \+ `up-arrow` (`🌐↑`): Moves to the top of the window or document or,
+  in VS Code and Safari, Page Up.
 
 ## Create a line break in apps where `Return` means Send
 
-- `Shift` \+ `Return` Used in Signal and Messages
+- `Shift` \+ `Return` (`⇧↩`) Used in Signal and Messages
 
 ## MacBook Trackpad setup
 
-`Settings` &rarr; `Trackpad`
+`Settings` → `Trackpad`
 
 Remember to use both hands. For example, for me, swiping from the left is easier
 with the left hand. When selecting a large amount of text, it is possible to
@@ -177,7 +186,7 @@ Enable
 
 ### Dictionary lookup
 
-Dictionary lookup can be enabled by turning `System Settings` &rarr; `Trackpad`.
+Dictionary lookup can be enabled by turning `System Settings` → `Trackpad`.
 
 Sometimes this does not work, even for words that are in the dictionary. And
 then it starts working.
@@ -193,18 +202,25 @@ fingers.
 
 ## Apple Mail app
 
-- `Option` \+  `Delete` When focus is in the message header view, deletes the
-   highlighted message without advancing to the next message. If this is what
-   you want as the default, uncheck `Settings` &rarr; `Viewing` &rarr;
-   `Automatically view next message after discarding or archiving a message`.
-- `Command` \+ `Shift` \+ `N`: Refresh mailbox.
-- `Command` \+ `Shift` \+ `+`: When focus is on a message, increases the
-  displayed size of the message content (zoom in).
-- `Command` \+ `Shift` \+ `-`: When focus is on a message, decreases the
-  displayed size of the message content (zoom out).
+- `Option` \+ `Delete` (`⌥⌫`) When focus is in the message header view,
+   deletes the highlighted message without advancing to the next message. If
+   this is what you want as the default, uncheck `Settings` → `Viewing`
+   → `Automatically view next message after discarding or archiving a
+   message`.
+- `Shift` \+ `Command` \+ `N` (`⇧⌘N`): Refresh mailbox.
+- `Command` \+ `=` (`⌘=`): When focus is on a message, increases the
+  displayed size of the message content (zoom in). `Shift` is not needed;
+  it's the `=`/`+` key.
+- `Command` \+ `-` (`⌘-`): When focus is on a message, decreases the displayed
+  size of the message content (zoom out).
+- There is no key to reset the zoom; press `Command` \+ `-` (`⌘-`) until the
+  message is back to normal size. These zoom shortcuts are not in the menus.
+- `Command` \+ `0` (`⌘0`): "Message Viewer" (`Window` menu). Brings the main
+  Mail window to the front, even when messages are open in their own windows.
+  Unlike in Safari, this does *not* reset the zoom.
 - Two-finger left or right swipe on a message header exposes actions, like
   delete, mark as unread, etc.
-- When a message is selected `Command` \+ `Delete` deletes it.
+- When a message is selected `Command` \+ `Delete` (`⌘⌫`) deletes it.
 
 ## Messages app
 
@@ -216,30 +232,40 @@ fingers.
 
 - `Control` \+ Click on a Link: Opens in a new tab
 - Two finger right swipe in tab: Closes tab
-- `Command` \+ `Z`: Undo close tab
+- `Command` \+ `Z` (`⌘Z`): Undo close tab
 - Long press on `+` (new tab) shows recently closed tabs. Clicking on one
   reopens it.
 - Two finger swipe left and right on the trackpad are equivalent to the left
   and right arrows (`Show the previous page` and `Show the next page`).
-- `Command` \+ `W` closes a tab.
+- `Command` \+ `W` (`⌘W`) closes a tab.
+- `Command` \+ `=` (`⌘=`): "Zoom In". The View menu shows this as `⌘+`, but
+  `Shift` is not needed; it's the `=`/`+` key.
+- `Command` \+ `-` (`⌘-`): "Zoom Out".
+- `Command` \+ `0` (`⌘0`): "Actual Size". Resets the zoom.
 
 ## VS Code
 
 [Keyboard shortcuts for macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
-- `Option` \+ `Command` \+ `F`: Find and replace.
-- `Shift` \+ `Command` \+ `\`: Jump to the matching bracket
-- `Control` \+ `G`: Jump to line number
-- `Command` \+ `K` \+ `S`: Open Keyboard Shortcuts
-- `Fn` \+ `F1` or `Command` \+ `Shift` \+ `P`: Open Command
-- `Control` \+ `P`: Previous line. Same as the up arrow key.
-- `Control` \+ `N`: Next line. Same as the down arrow key.
+- `Option` \+ `Command` \+ `F` (`⌥⌘F`): Find and replace.
+- `Shift` \+ `Command` \+ `\` (`⇧⌘\`): Jump to the matching bracket
+- `Control` \+ `G` (`⌃G`): Jump to line number
+- `Command` \+ `K`, then `Command` \+ `S` (`⌘K ⌘S`): Open Keyboard Shortcuts
+- `Fn` \+ `F1` (`🌐F1`) or `Shift` \+ `Command` \+ `P` (`⇧⌘P`): Open Command
+- `Control` \+ `P` (`⌃P`): Previous line. Same as the up arrow key.
+- `Control` \+ `N` (`⌃N`): Next line. Same as the down arrow key.
+- `Command` \+ `=` (`⌘=`): "View: Zoom In". Zoom in on the whole window
+  (icons, text, file names, etc.).
+- `Command` \+ `-` (`⌘-`): "View: Zoom Out". Zoom out on the whole window.
+- `Command` \+ `Numpad 0` (`⌘Numpad0`): "View: Reset Zoom". Without a numeric
+  keypad, run "View: Reset Zoom" from the Command Palette (`Shift` \+ `Command`
+  \+ `P` (`⇧⌘P`)).
 - [Page up, page down](#moving-on-the-line-and-up-and-down-lines)
 
-VS Code steals the default minimize `Command` \+ `M`. I found no shortcut that
-uses only this, but some use it in conjunction with other keys, like `Command`
-\+ `K` \+ `M` for "Change Language Mode" and `Shift` \+ `Command` \+ `M` for
-"Toggle Problems".
+VS Code steals the default minimize `Command` \+ `M` (`⌘M`). I found no
+shortcut that uses only this, but some use it in conjunction with other keys,
+like `Command` \+ `K`, then `M` (`⌘K M`) for "Change Language Mode" and
+`Shift` \+ `Command` \+ `M` (`⇧⌘M`) for "Toggle Problems".
 
 ### Opening a file in VS Code from shell
 
@@ -281,8 +307,8 @@ Use `Automator` to create a `Quick Action` for Files and Folders.
    `Custom`
 7. Find `Open Finder items` in the Library
 8. Clock on `Open With`, then find `Visual Studio Code`
-9. Click on `File` &rarr; `Save` (or `Command` \+ `S`) and enter something like
-   "Open with Visual Studio Code".
+9. Click on `File` → `Save` (or `Command` \+ `S` (`⌘S`)) and enter
+   something like "Open with Visual Studio Code".
 
 To use what you just created:
 
@@ -305,14 +331,14 @@ Double click on the picture to open the Preview app.
 
 - `Control` \+ Click on the photo
 - Click on `Edit With`
-- Click on `Preview` (NB: you'll see a shortcut `Command` \+ `Return`. It
-  doesn't work.)
+- Click on `Preview` (NB: you'll see a shortcut `Command` \+ `Return`
+  (`⌘↩`). It doesn't work.)
 
 ### Once in Previews
 
-- `Tools` &rarr; `Text Selection`
+- `Tools` → `Text Selection`
 - Use "drag" to select the desired text
-- Copy, e.g., with `Command` \+ `C`
+- Copy, e.g., with `Command` \+ `C` (`⌘C`)
 
 ## Photo App
 
@@ -459,11 +485,11 @@ sudo port install osxphotos
   - After installing it and Firefox, install its Firefox extension by opening
     <https://addons.mozilla.org/en-GB/firefox/addon/strongbox-autofill/> in
     Firefox.
-  - `System Settings` &rarr; `Touch ID & Password` set
+  - `System Settings` → `Touch ID & Password` set
     `Use Touch ID for autofilling passwords` on.
-  - `System Settings` &rarr; `Autofill from` &rarr; `AutoFill & Password`, turn
+  - `System Settings` → `Autofill from` → `AutoFill & Password`, turn
     `Passwords` off and `Strongbox` on, and list `Strongbox` in `Setup Code In`
-  - Verify that Strongbox is listed under `Login Items & Extensions` &rarr;
+  - Verify that Strongbox is listed under `Login Items & Extensions` →
     `Open at Login`
 - Swift Playground
 - Xcode
@@ -480,8 +506,8 @@ To avoid the annoying warning about zsh when starting bash, put this into
 export BASH_SILENCE_DEPRECATION_WARNING=1
 ```
 
-Sometimes `Control` \+ `C` stops working and you'll hear a beep. When this
-happens, try `Command` \+ `.`
+Sometimes `Control` \+ `C` (`⌃C`) stops working and you'll hear a beep. When
+this happens, try `Command` \+ `.` (Period) (`⌘.`).
 
 When you exit the shell, `Terminal` will stay running. To prevent this, in the
 `Terminal` settings `Profiles`, change "When the shell exits" to "Close if shell
@@ -495,13 +521,15 @@ See `pbcopy(1)` and `pbpaste(1)`.
 
 [Keyboard shortcuts in Terminal on Mac](https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac)
 
-Do *not* confuse `Command` with `Control`. For example, `Command` \+ `D` splits
-the terminal window into two panes but `Control` \+ `D` is an end-of-file.
+Do *not* confuse `Command` with `Control`. For example, `Command` \+ `D`
+(`⌘D`) splits the terminal window into two panes but `Control` \+ `D` (`⌃D`)
+is an end-of-file.
 
 The keyboard shortcuts cannot be disabled. They can be assigned to a different
 chord.
 
- (`Shift` \+ `Command` \+ `D` undoes the split created by `Command` \+ `D`.)
+(`Shift` \+ `Command` \+ `D` (`⇧⌘D`) undoes the split created by `Command`
+\+ `D` (`⌘D`).)
 
 ### Copying file names from Finder to Terminal
 
@@ -683,7 +711,7 @@ to display the attached device, as shown above.
 ### Use the Screenshot app
 
 1. Open the Screenshot app by pressing these three keys together: `Shift` \+
-   `Command` \+ `5`.
+   `Command` \+ `5` (`⇧⌘5`).
 2. You should see an onscreen toolbar with three controls for capturing a still
    image of your screen, followed by these two controls for recording a video of
    the screen:
@@ -703,7 +731,7 @@ to display the attached device, as shown above.
       your desktop.
 4. To start recording, click the `Record` button in the Screenshot toolbar.
 5. To stop recording, click the `Stop` button in the menu bar, or press
-   `Command` \+ `Control` \+ `Esc`.
+   `Control` \+ `Command` \+ `Esc` (`⌃⌘⎋`).
 6. When you see a thumbnail of the recording in the corner of your screen, click
    it to edit the recording. Or wait for the recording to save to your desktop.
 
@@ -712,8 +740,8 @@ to display the attached device, as shown above.
 ### Use QuickTime Player
 
 1. Open QuickTime Player from your Applications folder.
-2. From the menu bar, choose `File` &rarr; `New Screen Recording`. Or press
-   `Control` \+ `Command` \+ `N`.
+2. From the menu bar, choose `File` → `New Screen Recording`. Or press
+   `Control` \+ `Command` \+ `N` (`⌃⌘N`).
     - If you see the onscreen controls described above, screen recording on your
       Mac is performed by the Screenshot app. Follow the steps in the previous
       section.
@@ -733,7 +761,7 @@ to display the attached device, as shown above.
     - Or drag to select an area to record, then click `Start Recording` within
       that area.
 5. To stop recording, click the `Stop` button in the menu
-   bar, or press `Command` \+ `Control` \+ `Esc` (Escape).
+   bar, or press `Control` \+ `Command` \+ `Esc` (Escape) (`⌃⌘⎋`).
 6. After you stop recording, QuickTime Player automatically opens the recording.
    You can now play, edit, or share the recording.
 
@@ -741,8 +769,8 @@ to display the attached device, as shown above.
 
 ## Delete an app
 
-`Finder` &rarr; `Applications`, click on the application, then press `Command`
-\+ `Delete`.
+`Finder` → `Applications`, click on the application, then press `Command`
+\+ `Delete` (`⌘⌫`).
 
 ## External tips and tricks
 
@@ -758,7 +786,7 @@ safe.
 
 - macOS will display "Apple could not verify .... is free of malware ..." and
   will offer to "Move to Trash". Click `Done`.
-- Open `System Settings` &rarr; `Privacy & Security`
+- Open `System Settings` → `Privacy & Security`
 - At the bottom, under `Security`, you should see the package you tried to
   install. Click on `Open Anyway` and the click on it again. Then enter your
   local password (not for the Apple account).
@@ -803,7 +831,7 @@ This opens a Finder window at the current working directory.
 
 ### Control what a new Finder window shows
 
-`Finder` &rarr; `Settings` &rarr; `General`: Change the value of
+`Finder` → `Settings` → `General`: Change the value of
 `New Finder windows show`.
 
 ### Show path
@@ -821,11 +849,13 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Fi
 
 ### Finder directory navigation shortcuts
 
-- `Command` \+ Up-Arrow to go up a directory level I.e., `cd ..`.
-- `Command` \+ Down-Arrow to return to the previous directory. I.e., `cd -`.
-- `Command` \+ `Shift` \+ `g` Opens a dialog that accepts a directory. This does
-  not accept `..` or `../` but does accept `~`.
-- `Command` \+ `Shift` \+ `h`. Jump to user's home directory. I.e., `cd ~`.
+- `Command` \+ `up-arrow` (`⌘↑`) to go up a directory level I.e., `cd ..`.
+- `Command` \+ `down-arrow` (`⌘↓`) to return to the previous directory. I.e.,
+  `cd -`.
+- `Shift` \+ `Command` \+ `G` (`⇧⌘G`) Opens a dialog that accepts a directory.
+  This does not accept `..` or `../` but does accept `~`.
+- `Shift` \+ `Command` \+ `H` (`⇧⌘H`). Jump to user's home directory. I.e.,
+  `cd ~`.
 
 ### Selecting files in Finder
 
@@ -838,9 +868,9 @@ on the last file in the range.
 #### Moving files method one
 
 First [select a file or files](#selecting-files-in-finder), then `Command` \+
-`C`, then select the target, and click either click on `Edit` &rarr; `Paste` or
-right click on the source then click on `Paste`. (Do not use `Command` \+ `V` as
-that will copy the files.)
+`C` (`⌘C`), then select the target, and click either click on `Edit` →
+`Paste` or right click on the source then click on `Paste`. (Do not use
+`Command` \+ `V` (`⌘V`) as that will copy the files.)
 
 ***This did not work today. Wtf?***
 
@@ -894,13 +924,13 @@ For more information, see the
 
 ### Delete a file
 
-- Select the file(s) and press `Command` \+ `Delete`
+- Select the file(s) and press `Command` \+ `Delete` (`⌘⌫`)
 - Select the file(s) and [right click](#point--click), then click on
   `Move to Trash`
 
 ### Opening a Finder directory in a terminal tab
 
-- `System Preferences window` &rarr;  `Keyboard` &rarr; `Keyboard Shortcuts`
+- `System Preferences window` → `Keyboard` → `Keyboard Shortcuts`
   opens a new sub-window.
 - On the left side of this new window, find `Services` at the bottom of the
   list. Click on in.
@@ -917,7 +947,8 @@ folder.
 
 For example, Finder does not show `~/.bashrc` by default.
 
-`Command` \+ `Shift` \+ `.` (Period) toggles the display of hidden files and folders on and off.
+`Shift` \+ `Command` \+ `.` (Period) (`⇧⌘.`) toggles the display of hidden
+files and folders on and off.
 
 To display hidden files permanently set it via Terminal and then restart Finder:
 
@@ -933,7 +964,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool false && \
 killall Finder
 ```
 
-The toggle (⌘⇧.) and the defaults setting are independent—the toggle is a
+The toggle (`⇧⌘.`) and the defaults setting are independent—the toggle is a
 per-session override, while the defaults write makes it permanent.
 
 ## MacOS shell weirdnesses
@@ -971,7 +1002,7 @@ From `ls(1)`
 > field for dataless files and directories, possibly replacing the '@' or '+'
 > character.
 
-Permission is granted in `System Settings` &rarr; `Privacy & Security`.
+Permission is granted in `System Settings` → `Privacy & Security`.
 
 - `Photos`
 - `Files and Folders`
@@ -1002,13 +1033,13 @@ which is a symbolic link to `../var/run/resolv.conf` contains this:
 ```
 
 The `nameserver` values listed in `resolv.conf` come from `System Settings`
-&rarr; `Network` &rarr; `Details` (of current connection) &rarr; `DNS`
+→ `Network` → `Details` (of current connection) → `DNS`
 
 ## Users and groups
 
 MacOS does not use `/etc/passwd`.
 
-To edit a user from `Settings` &rarr; `Control` \+ Click on the user name.
+To edit a user from `Settings` → `Control` \+ Click on the user name.
 "Advanced Options..." should appear. Click on it.
 
 From the command line, use `dscacheutil` and `dseditgroup` and maybe
@@ -1152,3 +1183,26 @@ Error: See /opt/local/var/macports/logs/_opt_local_var_macports_sources_rsync.ma
 Error: Follow https://guide.macports.org/#project.tickets if you believe there is a bug.
 Error: Processing of port man-db failed
 ```
+
+<!--
+Unicode characters used in this file and their HTML equivalents:
+
+- `⌘` (Command) is `&#8984;`
+- `⌥` (Option) is `&#8997;`
+- `⇧` (Shift) is `&#8679;`
+- `⌃` (Control) is `&#8963;`
+- `⎋` (Esc) is `&#9099;`
+- `⌫` (Delete) is `&#9003;`
+- `↩` (Return) is `&#8617;`
+- `⇥` (Tab) is `&#8677;`
+- `🌐` (Fn/Globe) is `&#127760;`
+- `↑` (up-arrow) is `&uarr;`
+- `↓` (down-arrow) is `&darr;`
+- `←` (left-arrow) is `&larr;`
+- `→` (right-arrow, menu path) is `&rarr;`
+- `—` (mdash) is `&mdash;`
+- `–` (ndash) is `&ndash;`
+- `“` (left double quote) is `&ldquo;`
+- `”` (right double quote) is `&rdquo;`
+- `é` (e acute) is `&eacute;`
+-->
