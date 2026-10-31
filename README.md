@@ -90,6 +90,7 @@ Much of this is from
   app.
 - To speak a text selection: `Option` \+ `Esc` (`⌥⎋`).
 - To type an mdash (`—`): `Option` \+ `Shift` \+ `-` (`⌥⇧-`).
+- To type an ndash (`–`): `Option` \+ `-` (`⌥-`).
 
 ### More text editing keys
 
