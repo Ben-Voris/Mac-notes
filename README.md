@@ -223,6 +223,33 @@ fingers.
   delete, mark as unread, etc.
 - When a message is selected `Command` \+ `Delete` (`⌘⌫`) deletes it.
 
+### Unread count too high for a Google account
+
+Symptom: The Dock badge and the count next to `Inbox` show more unread messages
+than Gmail in a browser does (November 2026: Mail showed 8, Gmail showed 4).
+Selecting the `Unread` filter in the Inbox lists only the correct 4 messages,
+so Mail's stored count disagrees with its own message list. `Mailbox` →
+`Synchronize` *account* fixed it, but took several hours, and the counts
+diverged again the next day. `Mailbox` → `Rebuild` on the Inbox didn't help.
+
+Check first: `Settings` → `General` → `Dock unread count` is `Inbox Only`, and
+the extra unread messages aren't hidden inside conversations.
+
+Fix (rebuilds Mail's index, which had gone stale; took a few minutes):
+
+1. Quit Mail.
+2. In Finder, `Go` → `Go to Folder` (`⇧⌘G`):
+   `~/Library/Mail/V10/MailData/`
+3. Move the files whose names start with `Envelope Index` (usually three) to
+   the Desktop. Don't delete them yet.
+4. Reopen Mail. It shows "Importing" and then downloads a few hundred
+   messages. Wait for it to finish before checking the count.
+5. Once the count is correct, delete the old `Envelope Index` files from the
+   Desktop.
+
+If the count drifts again, check whether a macOS update lines up with when it
+started.
+
 ## Messages app
 
 - `Control` \+ Click on a message: Displays options for tapback, edit message,
